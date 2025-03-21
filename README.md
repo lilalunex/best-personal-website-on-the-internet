@@ -8,12 +8,6 @@
 
 ___
 
-## Version 0
-
-[ ] Plain HTML, CSS, JS
-
----
-
 ### Future Music
 
 [ ] UnoCSS
@@ -35,5 +29,11 @@ ___
 [ ] Nuxt
 
 [ ] Next
+
+---
+
+## Version 0
+
+[X] Plain HTML, CSS, JS
 
 ---

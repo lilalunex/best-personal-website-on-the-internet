@@ -1,0 +1,26 @@
+#cookies-banner {
+    position: fixed;
+    left: 2%;
+    bottom: 50%;
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    height: auto;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+#cookies-banner.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#cookies-banner.hide {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}

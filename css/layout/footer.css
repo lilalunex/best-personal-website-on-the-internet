@@ -1,9 +1,9 @@
-hr:first-of-type {
+footer hr:first-of-type {
     border-top: 2px solid var(--golden-tan);
     border-bottom: none;
 }
 
-hr:last-of-type {
+footer hr:last-of-type {
     border-top: none;
     border-bottom: 2px solid var(--golden-tan);
 }

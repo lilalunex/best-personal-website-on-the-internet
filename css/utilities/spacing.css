@@ -249,3 +249,8 @@
 .my-48 { margin-top: calc(var(--spacing) * 12); margin-bottom: calc(var(--spacing) * 12); }
 .my-56 { margin-top: calc(var(--spacing) * 14); margin-bottom: calc(var(--spacing) * 14); }
 .my-64 { margin-top: calc(var(--spacing) * 16); margin-bottom: calc(var(--spacing) * 16); }
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -4,6 +4,10 @@
     --scale-big: 1.6;
 }
 
+.breathing-circle-wrapper {
+    min-height: 600px;
+}
+
 .breathing-circle,
 .inner-breathing-circle {
     height: var(--circle-size);

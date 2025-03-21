@@ -79,6 +79,7 @@ function removeGA() {
 
 function updateBannerVisibility(visible) {
     if (visible) {
+        banner.style.visibility = "visible";
         banner.classList.remove("hide");
         banner.classList.add("show");
     } else {

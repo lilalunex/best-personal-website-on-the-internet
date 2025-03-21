@@ -13,13 +13,18 @@
 @import url("layout/footer.css");
 
 /* Typography */
-@import url("typography/text.css");
+@import url("typography/typography.css");
 
 /* Utilities */
-@import url("utilities/align.css");
+@import url("utilities/bg.css");
+@import url("utilities/border.css");
+@import url("utilities/btn.css");
+@import url("utilities/color.css");
 @import url("utilities/container.css");
 @import url("utilities/display.css");
+@import url("utilities/flex.css");
 @import url("utilities/gap.css");
 @import url("utilities/grid.css");
+@import url("utilities/hr.css");
 @import url("utilities/position.css");
 @import url("utilities/spacing.css");

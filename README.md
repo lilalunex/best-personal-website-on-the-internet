@@ -4,17 +4,21 @@
 
 ## Current Techstack
 
-[X] HTML, UnoCSS, JS
+[ ] Plain HTML, CSS, JS
 
 ___
 
 ## Version 0
 
-[X] Plain HTML, CSS, JS
+[ ] Plain HTML, CSS, JS
 
 ---
 
 ### Future Music
+
+[ ] UnoCSS
+
+[ ] Atomic Design
 
 [ ] TypeScript
 

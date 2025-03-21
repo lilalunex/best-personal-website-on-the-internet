@@ -1,0 +1,59 @@
+body {
+    font-size: 18px;
+    text-wrap: balance;
+}
+
+p {
+    max-width: 65ch;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 0.83em;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 0.67em;
+    font-weight: 400;
+}
+
+h1.title {
+    font-size: 64px;
+    text-shadow: 2px 1px 0 black
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}

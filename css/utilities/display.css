@@ -2,6 +2,12 @@
     display: none !important;
 }
 
-.flex {
-    display: flex;
+.block {
+    display: block;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }

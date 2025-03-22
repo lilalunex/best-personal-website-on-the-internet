@@ -1,6 +1,7 @@
 :root {
     --circle-size: 240px;
     --border-thickness: 32px;
+    --scale-big-mobile: 1.2;
     --scale-big: 1.6;
     --muted-blood-red: #ec8989;
     --dusky-pink: #eb90c9;
@@ -8,7 +9,13 @@
 }
 
 .breathing-circle-wrapper {
-    min-height: 600px;
+    min-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .breathing-circle-wrapper {
+        min-height: 600px;
+    }
 }
 
 .breathing-circle,
@@ -56,11 +63,11 @@
         border-color: var(--dusky-pink);
     }
     45% {
-        transform: scale(var(--scale-big));
+        transform: scale(var(--scale-big-mobile));
         border-color: var(--muted-blood-red);
     }
     70% {
-        transform: scale(var(--scale-big));
+        transform: scale(var(--scale-big-mobile));
         border-width: var(--border-thickness);
         border-color: var(--muted-blood-red);
     }
@@ -77,15 +84,58 @@
         opacity: 0;
     }
     60% {
-        transform: scale(var(--scale-big));
+        transform: scale(var(--scale-big-mobile));
         opacity: 1;
     }
     70% {
-        transform: scale(var(--scale-big));
+        transform: scale(var(--scale-big-mobile));
         opacity: 0;
     }
     100% {
         transform: scale(0);
         opacity: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    @keyframes breathing {
+        0%, 15% {
+            transform: scale(1);
+            border-width: 100px;
+            border-color: var(--dusky-pink);
+        }
+        45% {
+            transform: scale(var(--scale-big));
+            border-color: var(--muted-blood-red);
+        }
+        70% {
+            transform: scale(var(--scale-big));
+            border-width: var(--border-thickness);
+            border-color: var(--muted-blood-red);
+        }
+        100% {
+            transform: scale(1);
+            border-width: 100px;
+            border-color: var(--dusky-pink);
+        }
+    }
+
+    @keyframes breathing-inner {
+        0%, 50% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        60% {
+            transform: scale(var(--scale-big));
+            opacity: 1;
+        }
+        70% {
+            transform: scale(var(--scale-big));
+            opacity: 0;
+        }
+        100% {
+            transform: scale(0);
+            opacity: 0;
+        }
     }
 }

@@ -1,6 +1,6 @@
 #cookies-banner {
     position: fixed;
-    right: 64px;
+    right: 50%;
     bottom: 64px;
     background: #fff;
     color: #000;
@@ -8,14 +8,14 @@
     height: auto;
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
+    transform: translateY(10px) translateX(50%);
     transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 #cookies-banner.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translateY(10px) translateX(50%);
 }
 
 #cookies-banner.hide {

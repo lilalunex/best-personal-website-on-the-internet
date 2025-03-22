@@ -19,9 +19,6 @@ export default defineConfig({
             'dusky-pink': '#eb90c9',
             'soft-gold': '#ffdba0',
             'lotus-border': '#8f7565',
-        },
-    },
-    rules: [
-        ['title', {'font-size': '64px', 'text-shadow': '2px 1px 0 black'}],
-    ]
+        }
+    }
 })

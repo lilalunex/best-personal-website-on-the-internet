@@ -15,11 +15,10 @@
 #cookies-banner.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(10px) translateX(50%);
+    transform: translateY(0) translateX(50%);
 }
 
 #cookies-banner.hide {
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    transform: translateY(10px) translateX(50%);
 }

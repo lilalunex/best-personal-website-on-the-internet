@@ -82,12 +82,12 @@
         <h3 id="cookie-heading" class="text-center text-3xl">Google Analytics</h3>
         <div class="flex justify-between pt-8 md:pt-12 gap-4 md:gap-16">
             <div>
-                <button on:click={() => setGAConsent(true)}
+                <button on:click={() => setGAConsent("true")}
                         class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Accept
                 </button>
             </div>
             <div>
-                <button on:click={() => setGAConsent(false)}
+                <button on:click={() => setGAConsent("false")}
                         class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Decline
                 </button>
             </div>

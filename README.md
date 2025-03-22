@@ -8,16 +8,6 @@
 
 ___
 
-## TODO
-
-[ ] 2024 Website
-
-[ ] Casino Web Version
-
-[ ] Subpages
-
-___
-
 ### Future Music
 
 [ ] HTMX

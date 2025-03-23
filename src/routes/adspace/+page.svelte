@@ -1,5 +1,5 @@
 <style>
-    .adspace {
+    .own-adspace {
         border-width: 3px;
         border-style: dotted;
         border-color: grey;
@@ -16,12 +16,12 @@
             Ad-Space
         </h1>
 
-        <div class="adspace py-24 my-8">
+        <div class="own-adspace py-24 my-8">
             <div class="text-center">
                 <p class="text-2xl">Ad-Space 1 / 3</p>
                 <p class="pt-4">
-                    Buy this Ad-Space. One month for 50 Euro.<br>
-                    You can display one image, one title, one subtitle, a brief description & a link.
+                    Buy this Ad-Space.<br>
+                    Display different images on mobile & desktop, one title, one subtitle, a brief description & a link.
                 </p>
                 <div class="pt-16">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace1"
@@ -30,12 +30,12 @@
             </div>
         </div>
 
-        <div class="adspace py-24 my-8">
+        <div class="own-adspace py-24 my-8">
             <div class="text-center">
                 <p class="text-2xl">Ad-Space 2 / 3</p>
                 <p class="pt-4">
-                    Buy this Ad-Space. One month for 50 Euro.<br>
-                    You can display one image, one title, one subtitle, a brief description & a link.
+                    Buy this Ad-Space.<br>
+                    Display different images on mobile & desktop, one title, one subtitle, a brief description & a link.
                 </p>
                 <div class="pt-16">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace2"
@@ -44,12 +44,12 @@
             </div>
         </div>
 
-        <div class="adspace py-24 my-8">
+        <div class="own-adspace py-24 my-8">
             <div class="text-center">
                 <p class="text-2xl">Ad-Space 3 / 3</p>
                 <p class="pt-4">
-                    Buy this Ad-Space. One month for 50 Euro.<br>
-                    You can display one image, one title, one subtitle, a brief description & a link.
+                    Buy this Ad-Space.<br>
+                    Display different images on mobile & desktop, one title, one subtitle, a brief description & a link.
                 </p>
                 <div class="pt-16">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace3"

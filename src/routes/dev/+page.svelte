@@ -10,7 +10,7 @@
         <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
             Dev</h1>
 
-            <div class="grid grid-cols-1 xl-grid-cols-2 gap-8 pt-8">
+        <div class="grid grid-cols-1 xl-grid-cols-2 gap-8 pt-8">
             <div class="text-center xl:text-right xl:flex flex-col justify-center md:align-items-end">
                 <h1 class="text-3xl">Lunex Edakumi</h1>
                 <p class="text-2xl">Yet another Web Developer.</p>
@@ -108,14 +108,12 @@
                         <p>OS</p>
                         <p>IDE</p>
                         <p>Tools</p>
-                        <p>LLM</p>
                         <p>Learning</p>
                     </div>
                     <div class="text-xl text-left">
                         <p>macOS</p>
                         <p>intelliJ, Neovim</p>
                         <p>Alfred</p>
-                        <p>ChatGPT</p>
                         <p>boot.dev<br>frontendmasters</p>
                     </div>
                 </div>
@@ -152,9 +150,9 @@
             <br>
             <p class="ch-65 mx-auto">
                 On one way or the other I had to do with:<br>
-                jQuery, Ninox CRM, Make (formally: Integromat), Java, Python, Confluence, NPM, Composer,
-                GitKraken, Drupal, Shopify, JTL, PostCSS, Windows Office Programs, Apple Office Programs, Free Office
-                Programs, PostgresSQL, Django, Ionic, React Native, Angular, Atomic Design, IBM Carbon, Turbo C, NodeJS,
+                LLMs, CI/CD, jQuery, Ninox CRM, Make (formally: Integromat), Java, Python, Confluence, NPM, Composer,
+                GitKraken, Drupal, Shopify, JTL, PostCSS, Windows/Apple/Free Office Programs, PostgresSQL, Django,
+                Ionic, React Native, Angular, Atomic Design, IBM Carbon, Turbo C, NodeJS,
                 10 finger typing, optimizing workflow, improve OS usage, nixOS for Container, Docker, Shopware 5,
                 Symfony, REST, API, SASS, Ubuntu
             </p>

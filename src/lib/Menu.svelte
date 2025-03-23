@@ -4,10 +4,10 @@
     const menuItems = [
         { name: "Home", href: "/" },
         { name: "Projects", href: "/projects" },
-        { name: "Dev", href: "#" },
-        { name: "Partner", href: "#" },
+        { name: "Dev", href: "/dev" },
+        { name: "Partner", href: "/partner" },
         { name: "Peace", href: "/peace" },
-        { name: "Ad-Space", href: "#" }
+        { name: "Ad-Space", href: "/adspace" }
     ];
 </script>
 

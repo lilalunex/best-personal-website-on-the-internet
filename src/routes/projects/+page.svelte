@@ -1,13 +1,9 @@
 <script lang="ts">
     let isOpen = {
-        // future: false,
-        // present: false,
-        // past: false,
-        // ideas: false
-        future: true,
-        present: true,
-        past: true,
-        ideas: true
+        future: false,
+        present: false,
+        past: false,
+        ideas: false
     };
 
     const expandAll = () => {

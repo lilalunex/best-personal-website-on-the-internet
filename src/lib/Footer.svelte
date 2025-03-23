@@ -30,7 +30,7 @@
         </div>
         <div class="text-center flex flex-col items-center gap-4 pb-4 md:pb-0">
             <div class="flex">
-                <a href="https://github.com/lilalunex" aria-label="GitHub Profile">Github</a>
+                <a href="https://github.com/lilalunex" aria-label="GitHub Profile">GitHub</a>
                 <a href="https://github.com/lilalunex" target="_blank" aria-label="Open GitHub in new tab">
                     <svg class="ml-4 mt-1.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 20"
                          fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -70,8 +70,8 @@
             </div>
         </div>
         <div class="text-center flex flex-col justify-end gap-4 pb-4 md:pb-0">
-            <div>Imprint</div>
-            <div>Privacy Policy</div>
+            <div><a href="/footer/imprint">Imprint</a></div>
+            <div><a href="/footer/privacy">Privacy Policy</a></div>
         </div>
     </div>
     <hr>

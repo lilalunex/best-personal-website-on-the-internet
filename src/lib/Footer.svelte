@@ -3,6 +3,7 @@
     import {setGAConsent, resetGoogleAnalytics} from "$lib/js/google-analytics";
     import {breathingCircle} from "$lib/js/breathing-circle";
 
+    // @ts-ignore
     const buildTimestamp = __BUILD_TIMESTAMP__;
 
     onMount(() => {

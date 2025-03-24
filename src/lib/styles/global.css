@@ -6,12 +6,11 @@
     --deeper-brown: #a0663f;
 }
 
-html.dark {
+.dark {
     --darkreader-warm-beige: #412916;
     --darkreader-muted-sand: #6f4615;
     --darkreader-golden-tan: #7a4b25;
     --darkreader-deeper-brown: #805232;
-
 
     --warm-beige: var(--darkreader-warm-beige);
     --muted-sand: var(--darkreader-muted-sand);

@@ -8,7 +8,7 @@
 
 <main>
 
-    <div class="" style="background-image: linear-gradient(135deg, var(--warm-beige), var(--muted-sand));">
+    <div class="bg-warm-beige">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
                 Relax, Breath & Move.</h1>
@@ -18,7 +18,7 @@
                 <div class="breathing-circle absolute"></div>
                 <span id="breathing-text" class="breathing-text absolute pt-21">breathe in</span>
             </div>
-            <div class="text-center pt-8">
+            <div class="text-center pt-12">
                 <h3 class="text-xl font-semibold">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Contact Me"
                        class="btn border-2 border-deeper-brown rounded-full px-16 py-8 mb-8 bg-body text-deeper-brown">Contact
@@ -26,11 +26,9 @@
                 </h3>
             </div>
         </div>
-
-        <div class="py-8"></div>
     </div>
 
-    <div class="" style="background-image: linear-gradient(225deg, var(--muted-sand), var(--warm-beige));">
+    <div class="bg-warm-beige">
         <div class="container mx-auto">
 
             <div class="pt-8 text-center text-earthy-brown">

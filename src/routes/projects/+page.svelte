@@ -48,7 +48,7 @@
                     Future {isOpen.future ? "-" : "+"}
                 </button>
 
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
                     </div>
@@ -61,7 +61,7 @@
                     Present {isOpen.present ? "-" : "+"}
                 </button>
 
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.present ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.present ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
                      aria-expanded={isOpen.present}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4">
@@ -87,7 +87,7 @@
                     Past {isOpen.past ? "-" : "+"}
                 </button>
 
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
                             <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown ml-4 hover:underline">This
@@ -118,7 +118,7 @@
                     Ideas {isOpen.ideas ? "-" : "+"}
                 </button>
 
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.ideas ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.ideas ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4 italic">- Make this page better looking...
                         </p>
@@ -128,6 +128,7 @@
                             play with your friends at the evenning. A game where you can just hop in without much this
                             and
                             that.</p>
+                        <p class="pt-4">- Nexx <span class="italic">(Psst... super secret)</span></p>
                     </div>
                 </div>
             </div>

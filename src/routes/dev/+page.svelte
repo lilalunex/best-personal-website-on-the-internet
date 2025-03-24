@@ -38,9 +38,7 @@
                         <p>CSS (SCSS, LESS)</p>
                         <p>JavaScript</p>
                         <p>PHP</p>
-                        <br>
                         <p>MySQL</p>
-                        <p>Databases</p>
                     </div>
                     <div class="text-xl text-left">
                         <p class="fw-bold">Experience</p>
@@ -48,9 +46,7 @@
                         <p>5+ years</p>
                         <p>4+ years</p>
                         <p>3+ years</p>
-                        <br>
                         <p>4+ years</p>
-                        <p>5+ years</p>
                     </div>
                 </div>
                 <div class="grid grid-cols-2 gap-4">
@@ -68,7 +64,7 @@
                         <p>3+ years</p>
                         <p>3+ years</p>
                         <p>2+ years</p>
-                        <p>1+ years</p>
+                        <p>2+ years</p>
                         <p>1+ years</p>
                         <br>
                     </div>
@@ -79,7 +75,6 @@
                         <p>Bootstrap</p>
                         <p>TailwindCSS</p>
                         <p>UnoCSS</p>
-                        <br>
                         <p>VueJS</p>
                         <p>Remix</p>
                         <p>Svelte</p>
@@ -88,9 +83,8 @@
                         <p class="fw-bold">Experience</p>
                         <p>3+ years</p>
                         <p>2+ years</p>
-                        <p>1 year</p>
-                        <br>
                         <p>This Website</p>
+                        <p>1 year</p>
                         <p>One Project</p>
                         <p>This Website</p>
                     </div>

@@ -11,7 +11,7 @@
 </style>
 
 <main>
-    <div class="bg-warm-beige">
+    <div class="bg-warm-beige dark:bg-darkreader-warm-beige text-earthy-brown dark:text-darkreader-earthy-brown">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h2 class="title text-center underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
                 One Handed Mobile Menu
@@ -38,7 +38,7 @@
                 user.<br>2. Learning: The content displayed on a site is more important than the menu which got me
                 there.<br><br>Drawn on iPad with Procreate.</p>
 
-            <div class="text-center pt-8">
+            <div class="text-center pt-8 text-black dark:text-black">
                 <button on:click={goBack} class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">
                     <svg width="24" height="24" viewBox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                          class="inline">

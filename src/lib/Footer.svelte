@@ -16,7 +16,7 @@
 
 <footer>
     <hr>
-    <div class="container mx-auto pt-8 pb-4 md:pb-8 grid grid-cols-1 md-grid-cols-3 xl-grid-cols-3">
+    <div class="container mx-auto pt-8 pb-4 md:pb-8 grid grid-cols-1 md-grid-cols-3 xl-grid-cols-3 text-earthy-brown dark:text-darkreader-earthy-brown">
         <div class="text-center flex flex-col gap-4 pb-4 md:pb-0">
             <div>
                 <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Mail Me"
@@ -83,24 +83,24 @@
             <div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
         </div>
     </div>
-    <div class="flex justify-center items-center py-2">
+    <div class="flex justify-center items-center py-2 text-earthy-brown dark:text-darkreader-earthy-brown">
         <small>build on: {buildTimestamp}</small>
     </div>
     <hr>
 </footer>
 
-<aside id="cookies-banner" aria-labelledby="cookie-heading" class="border-3 border-golden-tan rounded-2xl show hide">
+<aside id="cookies-banner" aria-labelledby="cookie-heading" class="border-3 border-golden-tan dark:border-darkreader-golden-tan rounded-2xl show hide bg-soft-cream dark:bg-darkreader-soft-cream text-earthy-brown dark:text-darkreader-earthy-brown">
     <div class="p-4 md:p-8">
         <h3 id="cookie-heading" class="text-center">Google Analytics</h3>
         <div class="flex justify-between pt-8 md:pt-12 gap-4 md:gap-16">
             <div>
                 <button on:click={() => setGAConsent("true")}
-                        class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Accept
+                        class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4">Accept
                 </button>
             </div>
             <div>
                 <button on:click={() => setGAConsent("false")}
-                        class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Decline
+                        class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown  border-2 rounded-xl px-8 py-4">Decline
                 </button>
             </div>
         </div>

@@ -5,7 +5,7 @@
 </style>
 
 <main>
-    <div class="bg-warm-beige">
+    <div class="bg-warm-beige dark:bg-darkreader-warm-beige text-earthy-brown dark:text-darkreader-earthy-brown">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
                 Dev</h1>
@@ -14,7 +14,7 @@
                 <div class="text-center xl:text-right xl:flex flex-col justify-center md:align-items-end">
                     <h1 class="text-3xl">Lunex Edakumi</h1>
                     <p class="text-2xl">Yet another Web Developer.</p>
-                    <div class="flex ml-auto pt-8 gap-8 justify-center">
+                    <div class="flex ml-auto pt-8 gap-8 justify-center text-black dark:text-black">
                         <a href="https://github.com/lilalunex" aria-label="GitHub Profile"
                            class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">
                             GitHub
@@ -137,7 +137,7 @@
             </div>
 
             <div>
-                <div class="text-center pb-8 pt-16">
+                <div class="text-center pb-8 pt-16 text-black dark:text-black">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Contact Me"
                        class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Contact me</a>
                 </div>

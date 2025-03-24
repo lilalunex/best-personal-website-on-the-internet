@@ -19,6 +19,13 @@ export default defineConfig({
             'dusky-pink': '#eb90c9',
             'soft-gold': '#ffdba0',
             'lotus-border': '#8f7565',
+
+            'darkreader-warm-beige': '#412916',
+            'darkreader-muted-sand': '#6f4615',
+            'darkreader-golden-tan': '#d49e72',
+            'darkreader-soft-cream': '#412700',
+            'darkreader-earthy-brown': '#c49e8f',
+            'darkreader-deeper-brown': '#805232',
         }
     }
 })

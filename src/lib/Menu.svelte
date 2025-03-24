@@ -12,6 +12,6 @@
 
 <ul class="text-center flex flex-col xl:flex-row gap-8 text-2xl">
     {#each menuItems as item}
-        <li><a href={item.href} class="text-3xl xl:text-2l text-shadow-[1px_1px_0_white] hover:underline" on:click={closeMenu}>{item.name}</a></li>
+        <li><a href={item.href} class="text-3xl xl:text-2l text-shadow-[1px_1px_0_white] hover:underline dark:text-white dark:text-shadow-[1px_1px_0_black]" on:click={closeMenu}>{item.name}</a></li>
     {/each}
 </ul>

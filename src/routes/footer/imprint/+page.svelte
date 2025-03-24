@@ -1,5 +1,5 @@
 <main>
-    <div class="bg-warm-beige">
+    <div class="bg-warm-beige dark:bg-darkreader-warm-beige">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h2 class="title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
                 Imprint (English)</h2>

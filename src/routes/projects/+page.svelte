@@ -26,7 +26,7 @@
 </script>
 
 <main>
-    <div class="bg-warm-beige">
+    <div class="bg-warm-beige dark:bg-darkreader-warm-beige">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
                 Projects
@@ -34,15 +34,14 @@
 
             <div class="flex items-center justify-center pt-8 gap-8">
                 <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4" on:click={expandAll}>
-                    Expand
-                    all
+                    Expand all
                 </button>
                 <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4" on:click={collapseAll}>
                     Collapse all
                 </button>
             </div>
 
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl">
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
                 <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
                         on:click={() => isOpen.future = !isOpen.future} aria-expanded={isOpen.future}>
                     Future {isOpen.future ? "-" : "+"}
@@ -55,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl">
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
                 <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
                         on:click={() => isOpen.present = !isOpen.present}>
                     Present {isOpen.present ? "-" : "+"}
@@ -69,9 +68,9 @@
                             version)
                             on this website - Started to deepen PHP knowledge - Github
                             Repository:<a href="https://github.com/lilalunex/casino-simulation/"
-                                          class="color-earthy-brown ml-4 hover:underline">This Tab</a><a
+                                          class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This Tab</a><a
                                 href="https://github.com/lilalunex/casino-simulation/"
-                                class="color-earthy-brown ml-4 hover:underline">New
+                                class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">New
                             Tab</a>
                         </p>
                         <p class="pt-4">
@@ -81,7 +80,7 @@
                 </div>
             </div>
 
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl">
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
                 <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
                         on:click={() => isOpen.past = !isOpen.past} aria-expanded={isOpen.past}>
                     Past {isOpen.past ? "-" : "+"}
@@ -90,29 +89,29 @@
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
-                            <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown ml-4 hover:underline">This
+                            <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
                                 Tab</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2024 Website - Used learning Remix (React
                             Framework) -
                             <a href="https://lilalunex.netlify.app/"
-                               class="color-earthy-brown ml-4  hover:underline">This Tab</a>
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This Tab</a>
                             <a href="https://lilalunex.netlify.app/" target="_blank"
-                               class="color-earthy-brown ml-4  hover:underline">New
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
                                 Tab</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                             <a href="https://lilalunex.dev/first-vue-website/index.html"
-                               class="color-earthy-brown ml-4  hover:underline">This Tab</a>
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This Tab</a>
                             <a href="https://lilalunex.dev/first-vue-website/index.html" target="_blank"
-                               class="color-earthy-brown ml-4  hover:underline">New
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
                                 Tab</a>
                         </p>
                     </div>
                 </div>
             </div>
 
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl">
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
                 <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
                         on:click={() => isOpen.ideas = !isOpen.ideas} aria-expanded={isOpen.ideas}>
                     Ideas {isOpen.ideas ? "-" : "+"}

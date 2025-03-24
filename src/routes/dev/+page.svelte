@@ -35,7 +35,7 @@
                     <div class="text-xl text-right">
                         <p class="fw-bold">Technology</p>
                         <p>HTML</p>
-                        <p>CSS (SCSS, LESS)</p>
+                        <p>CSS</p>
                         <p>JavaScript</p>
                         <p>PHP</p>
                         <p>MySQL</p>
@@ -148,7 +148,7 @@
                     GitKraken, Drupal, Shopify, JTL, PostCSS, Windows/Apple/Free Office Programs, PostgresQL, Django,
                     Ionic, React Native, Angular, Atomic Design, IBM Carbon, Turbo C, NodeJS,
                     10 finger typing, optimizing workflow, improve OS usage, nixOS for Container, Docker, Shopware 5,
-                    Symfony, REST, API, SASS, Ubuntu, Oracle DB, Microsoft Access
+                    Symfony, REST, API, SASS, SCSS, LESS, Ubuntu, Oracle DB, Microsoft Access
                 </p>
             </div>
         </div>

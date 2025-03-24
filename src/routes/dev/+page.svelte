@@ -111,10 +111,12 @@
                             <p>Learning</p>
                         </div>
                         <div class="text-xl text-left">
-                            <p>macOS</p>
+                            <p>macOS, Linux</p>
                             <p>intelliJ, Neovim</p>
                             <p>Alfred</p>
-                            <p>boot.dev<br>frontendmasters</p>
+                            <p><a href="boot.dev" target="_blank" class="underline">boot.dev</a><br><a
+                                    href="https://frontendmasters.com/" target="_blank" class="underline">frontendmasters</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -143,19 +145,16 @@
                 </div>
             </div>
 
-            <div class="text-center pt-8 pb-12 md:pb-8 ">
-                <p>Sure proficient in Git, CLI & what else is there.<br>
-                    Linux is the best OS. I am not an apple fanboy. Using mac is sure a luxury problem, I give you that.
-                </p>
+            <div class="text-center pb-4">
                 <br>
                 <p class="ch-65 mx-auto">
                     On one way or the other I had to do with:<br>
                     LLMs, CI/CD, jQuery, Ninox CRM, Make (formally: Integromat), Java, Python, Confluence, NPM,
                     Composer,
-                    GitKraken, Drupal, Shopify, JTL, PostCSS, Windows/Apple/Free Office Programs, PostgresSQL, Django,
+                    GitKraken, Drupal, Shopify, JTL, PostCSS, Windows/Apple/Free Office Programs, PostgresQL, Django,
                     Ionic, React Native, Angular, Atomic Design, IBM Carbon, Turbo C, NodeJS,
                     10 finger typing, optimizing workflow, improve OS usage, nixOS for Container, Docker, Shopware 5,
-                    Symfony, REST, API, SASS, Ubuntu
+                    Symfony, REST, API, SASS, Ubuntu, Oracle DB, Microsoft Access
                 </p>
             </div>
         </div>

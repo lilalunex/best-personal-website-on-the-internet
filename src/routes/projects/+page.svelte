@@ -67,7 +67,8 @@
                         on this website - Started to deepen PHP knowledge - Github
                         Repository:<a href="https://github.com/lilalunex/casino-simulation/"
                                       class="color-earthy-brown ml-4 hover:underline">This Tab</a><a
-                            href="https://github.com/lilalunex/casino-simulation/" class="color-earthy-brown ml-4 hover:underline">New
+                            href="https://github.com/lilalunex/casino-simulation/"
+                            class="color-earthy-brown ml-4 hover:underline">New
                         Tab</a>
                     </p>
                     <p class="pt-4">
@@ -85,12 +86,18 @@
 
             <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div class="ml-8 pb-8">
-                    <p class="pt-4"><span class="fw-bold">[X]</span> One handed mobile menu:
-                        <a href="https://lilalunex.github.io/" class="color-earthy-brown ml-4 hover:underline">This
+                    <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
+                        <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown ml-4 hover:underline">This
                             Tab</a>
                     </p>
                     <p class="pt-4"><span class="fw-bold">[X]</span> 2024 Website - Used learning Remix (React
-                        Framework)</p>
+                        Framework) -
+                        <a href="https://lilalunex.netlify.app/"
+                           class="color-earthy-brown ml-4  hover:underline">This Tab</a>
+                        <a href="https://lilalunex.netlify.app/" target="_blank"
+                           class="color-earthy-brown ml-4  hover:underline">New
+                            Tab</a>
+                    </p>
                     <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                         <a href="https://lilalunex.dev/first-vue-website/index.html"
                            class="color-earthy-brown ml-4  hover:underline">This Tab</a>
@@ -114,7 +121,7 @@
                     </p>
                     <p class="pt-4">- GUI for Casino Simulation -> release as actual game
                         (Go directly all in and it with Rust...?)</p>
-                    <p class="pt-4">- Socialize MMO - Idea come from to have something to
+                    <p class="pt-4">- Socialize Browser MMO - Idea come from to have something to
                         play with your friends at the evenning. A game where you can just hop in without much this and
                         that.</p>
                 </div>

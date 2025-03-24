@@ -32,19 +32,22 @@ export function resetGoogleAnalytics(): void {
 function loadGA(): void {
     if ((window as any).gtag) return;
 
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${CONFIG.GA_ID}`;
-    document.head.appendChild(script);
+    const script1 = document.createElement("script");
+    script1.setAttribute("async", "true");
+    script1.src = `https://www.googletagmanager.com/gtag/js?id=${CONFIG.GA_ID}`;
+    document.head.appendChild(script1);
 
-    script.onload = () => {
-        (window as any).dataLayer = (window as any).dataLayer || [];
-        (window as any).gtag = function (...args: any[]) {
-            (window as any).dataLayer.push(args);
-        };
-        (window as any).gtag('js', new Date());
-        (window as any).gtag('config', CONFIG.GA_ID);
-    };
+    const script2 = document.createElement("script");
+    script2.textContent = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '${CONFIG.GA_ID}');
+`;
+
+    document.head.appendChild(script1);
+    document.head.appendChild(script2);
 }
 
 function removeGA(): void {

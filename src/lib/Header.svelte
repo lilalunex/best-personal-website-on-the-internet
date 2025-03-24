@@ -11,9 +11,8 @@
     let darkMode = false;
 
     onMount(() => {
-        // Check if user has a preference stored
-        darkMode = localStorage.getItem("darkMode") === "true"
-            || (window.matchMedia("(prefers-color-scheme: dark)").matches && localStorage.getItem("darkMode") === null);
+        // darkMode = localStorage.getItem("darkMode") === "true" || (window.matchMedia("(prefers-color-scheme: dark)").matches && localStorage.getItem("darkMode") === null);
+        darkMode = localStorage.getItem("darkMode") === "true";
 
         updateTheme();
     });

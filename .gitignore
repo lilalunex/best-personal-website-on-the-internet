@@ -2,6 +2,7 @@
 /js/env.js
 /src/lib/js/env.ts
 src/lib/js/env.ts
+vit-env.d.ts
 
 node_modules
 

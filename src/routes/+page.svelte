@@ -1,3 +1,15 @@
+<script>
+    import {onMount} from "svelte";
+
+    let titleText = "Relax, Breath & Move.";
+
+    onMount(() => {
+        if (Math.random() < 0.0821) {
+            titleText = "Lost in Translation";
+        }
+    });
+</script>
+
 <style>
     @import '$lib/styles/breathing-circle.css';
 
@@ -11,7 +23,7 @@
     <div class="bg-warm-beige dark:bg-darkreader-warm-beige">
         <div class="container mx-auto py-8 md:py-16 px-8">
             <h1 class="title text-center underline color-golden-tan dark:darkreader-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
-                Relax, Breath & Move.</h1>
+                {titleText}</h1>
             <div class="breathing-circle-wrapper flex items-center justify-center relative">
                 <div class="inner-breathing-circle absolute"></div>
                 <div class="inner-breathing-circle absolute"></div>

@@ -1,6 +1,6 @@
 <style>
     img {
-        max-height: 500px;
+        max-height: 400px;
     }
 
     a {
@@ -11,13 +11,14 @@
 
 <main>
     <div class="bg-warm-beige dark:bg-darkreader-warm-beige text-earthy-brown dark:text-darkreader-earthy-brown">
-        <div class="container mx-auto py-8 md:py-16 px-8">
+        <div class="container mx-auto py-8 md:py-16 px-8 text-center">
             <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
                 Partners
             </h1>
-            <div class="grid grid-cols-1 xl:grid-cols-2 pt-8">
+            <div class="xl:flex justify-center gap-8 pt-8">
                 <div>
-                    <img src="/partners/dukkart.png" alt="Dukkart Digital" class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl">
+                    <img src="/partners/dukkart.png" alt="Dukkart Digital"
+                         class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl">
                 </div>
                 <div class="flex flex-col justify-center items-center">
                     <p class="text-3xl pt-8">DukkArt Digital</p>
@@ -37,7 +38,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 xl:grid-cols-2 pt-16 pb-8">
+            <div class="grid xl:flex justify-center gap-8 pt-16 pb-8">
                 <div class="flex flex-col justify-center items-center order-2 xl:order-1">
                     <p class="text-3xl pt-8">Reza Jaxon</p>
                     <p class="text-2xl pt-2 pb-4">Dancer. Graffiti Artist. Designer.</p>

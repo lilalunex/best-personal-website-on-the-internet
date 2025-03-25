@@ -91,18 +91,11 @@
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
-                            <a href="/projects/one-handed-mobile-menu"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
-                                Tab</a>
+                            <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show me</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2024 Website - Used learning Remix (React
                             Framework) -
-                            <a href="https://lilalunex.netlify.app/"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This
-                                Tab</a>
-                            <a href="https://lilalunex.netlify.app/" target="_blank"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
-                                Tab</a>
+                            <a href="/projects/lilalunex_2024" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show me</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                             <a href="https://lilalunex.dev/first-vue-website/index.html"

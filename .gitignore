@@ -3,6 +3,7 @@
 /src/lib/js/env.ts
 src/lib/js/env.ts
 vit-env.d.ts
+*Zone.Identifier
 
 node_modules
 

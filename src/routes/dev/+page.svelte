@@ -1,6 +1,24 @@
+<script>
+    import { onMount } from 'svelte';
+
+    let images = [
+        '/dev/dev1.jpg',
+        '/dev/dev2.jpg',
+        '/dev/dev3.jpg',
+        '/dev/dev4.jpeg'
+    ];
+
+    let randomImage = '';
+
+    onMount(() => {
+        const randomIndex = Math.floor(Math.random() * images.length);
+        randomImage = images[randomIndex];
+    });
+</script>
+
 <style>
-    img {
-        max-height: 500px;
+    figure {
+        max-width: 400px;
     }
 </style>
 
@@ -24,7 +42,10 @@
                     </div>
                 </div>
                 <div class="text-center xl:text-left">
-                    <img src="/dev.jpg" alt="Developer" class="rounded-3xl mx-auto xl:mx-0">
+                    <figure>
+                        <img src={randomImage} alt="Developer" class="rounded-3xl mx-auto xl:mx-0" />
+                        <figcaption class="caption text-center pt-2">Picture: <a href="/partners">Sergej Dukkardt</a></figcaption>
+                    </figure>
                 </div>
             </div>
 

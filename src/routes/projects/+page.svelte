@@ -46,6 +46,22 @@
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
                 <h2>
                     <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
+                            on:click={() => isOpen.future = !isOpen.future}>
+                        Future
+                        <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.future ? 'rotate-45' : ''}`}>+</span>
+                    </button>
+                </h2>
+
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div class="ml-8 pb-8">
+                        <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
+                <h2>
+                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
                             on:click={() => isOpen.present = !isOpen.present}>
                         Present<span
                             class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.present ? 'rotate-45' : ''}`}>+</span>
@@ -67,24 +83,14 @@
                             Tab</a>
                         </p>
                         <p class="pt-4">
-                            <span class="fw-bold">[ ]</span> The Website you currently on
+                            <span class="fw-bold">[ ]</span> This website you currently on - Github
+                            Repository:<a href="https://github.com/lilalunex/best-personal-website-on-the-internet/"
+                                          class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
+                            Tab</a><a
+                                href="https://github.com/lilalunex/best-personal-website-on-the-internet/"
+                                class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">New
+                            Tab</a>
                         </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <h2>
-                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
-                            on:click={() => isOpen.future = !isOpen.future}>
-                        Upcoming
-                        <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.future ? 'rotate-45' : ''}`}>+</span>
-                    </button>
-                </h2>
-
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <div class="ml-8 pb-8">
-                        <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
                     </div>
                 </div>
             </div>
@@ -113,8 +119,7 @@
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                             <a href="https://lilalunex.dev/first-vue-website/index.html"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This
-                                Tab</a>
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This Tab</a>
                             <a href="https://lilalunex.dev/first-vue-website/index.html" target="_blank"
                                class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
                                 Tab</a>

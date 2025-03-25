@@ -97,13 +97,13 @@
         <div class="flex justify-between pt-8 md:pt-12 gap-4 md:gap-16">
             <div>
                 <button on:click={() => setGAConsent("true")}
-                        class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown">
+                        class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown">
                     <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Accept</span>
                 </button>
             </div>
             <div>
                 <button on:click={() => setGAConsent("false")}
-                        class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown">
+                        class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown">
                     <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Decline</span>
                 </button>
             </div>

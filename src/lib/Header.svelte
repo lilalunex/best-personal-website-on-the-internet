@@ -2,20 +2,28 @@
     import Menu from '$lib/Menu.svelte';
     import {onMount} from "svelte";
 
-    let menuOpen = false;
-
-    function toggleMenu() {
-        menuOpen = !menuOpen;
-    }
-
     let darkMode = false;
+    let menuOpen = false;
+    let body;
 
     onMount(() => {
+        body = document.body.classList;
+
         // darkMode = localStorage.getItem("darkMode") === "true" || (window.matchMedia("(prefers-color-scheme: dark)").matches && localStorage.getItem("darkMode") === null);
         darkMode = localStorage.getItem("darkMode") === "true";
 
         updateTheme();
     });
+
+    function toggleMenu() {
+        menuOpen = !menuOpen;
+
+        if(menuOpen) {
+            body.add('no-scroll');
+        } else {
+            body.remove('no-scroll');
+        }
+    }
 
     function toggleDarkMode() {
         darkMode = !darkMode;
@@ -37,13 +45,17 @@
         border-top: 2px solid var(--golden-tan);
         border-bottom: 2px solid var(--golden-tan);
     }
+
+    .btn-ctrl {
+        min-width: 260px;
+    }
 </style>
 
 <header>
     <hr>
     <nav class="container mx-auto pt-8 pb-0 xl:pb-8 flex justify-between items-center px-4 relative">
         <button
-                class="xl:hidden p-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl px-16 text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
+                class="btn-ctrl xl:hidden p-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl px-16 text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
                 on:click={toggleMenu}>
             {menuOpen ? '' : '☰ MENU ☰'}
         </button>
@@ -93,7 +105,7 @@
 
     {#if menuOpen}
         <div class="mobile-nav-wrapper fixed inset-0 flex flex-col justify-center items-center text-2xl gap-6 transition-all duration-300 z-50">
-            <button class="flex justify-center absolute top-9 p-2 left-1/2 -translate-x-1/2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige rounded-xl px-16 whitespace-nowrap dark:text-shadow-[1px_1px_0_black] dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige text-black dark:text-white"
+            <button class="btn-ctrl flex justify-center absolute top-9 p-2 left-1/2 -translate-x-1/2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige rounded-xl px-16 whitespace-nowrap dark:text-shadow-[1px_1px_0_black] dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige text-black dark:text-white"
                     on:click={toggleMenu}>☰ CLOSE ☰
             </button>
             <button on:click={toggleDarkMode} class="absolute top-30">

@@ -4,12 +4,6 @@
     }
 </script>
 
-<style>
-    img {
-        /*max-height: 500px;*/
-    }
-</style>
-
 <main>
     <div class="bg-warm-beige dark:bg-darkreader-warm-beige text-earthy-brown dark:text-darkreader-earthy-brown">
         <div class="container mx-auto py-8 md:py-16 px-8">

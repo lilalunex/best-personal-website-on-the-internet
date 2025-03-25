@@ -1,7 +1,7 @@
 <main>
     <div class="bg-warm-beige dark:bg-darkreader-warm-beige">
         <div class="container mx-auto py-8 md:py-16 px-8">
-            <h1 class="title text-center underline color-golden-tan text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
+            <h1 class="title text-center underline breathing-title text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
                 Credits
             </h1>
 

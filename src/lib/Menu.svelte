@@ -6,7 +6,8 @@
         { name: "Projects", href: "/projects" },
         { name: "Dev", href: "/dev" },
         { name: "Partners", href: "/partners" },
-        { name: "Ad-Space", href: "/ad-space" }
+        { name: "Ad-Space", href: "/ad-space" },
+        { name: "Peace", href: "/peace" }
     ];
 </script>
 

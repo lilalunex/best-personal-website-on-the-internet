@@ -6,16 +6,14 @@
 
     let darkMode = false;
     let menuOpen = false;
-    let body;
+    let body: DOMTokenList;
 
     onMount(() => {
         body = document.body.classList;
 
-        // darkMode = localStorage.getItem("darkMode") === "true" || (window.matchMedia("(prefers-color-scheme: dark)").matches && localStorage.getItem("darkMode") === null);
         darkMode = localStorage.getItem("darkMode") === "true";
 
         updateTheme();
-        // removePreloadScreen();
     });
 
     function toggleMenu() {
@@ -41,8 +39,6 @@
             document.documentElement.classList.remove("dark");
         }
     }
-
-
 </script>
 
 <style>

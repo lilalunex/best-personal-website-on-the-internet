@@ -1,6 +1,8 @@
 <script lang="ts">
     import Menu from '$lib/Menu.svelte';
     import {onMount} from "svelte";
+    // import { removePreloadScreen} from "$lib/js/preload-screen";
+    // import '$lib/styles/preload-screen.css';
 
     let darkMode = false;
     let menuOpen = false;
@@ -13,6 +15,7 @@
         darkMode = localStorage.getItem("darkMode") === "true";
 
         updateTheme();
+        // removePreloadScreen();
     });
 
     function toggleMenu() {
@@ -38,6 +41,8 @@
             document.documentElement.classList.remove("dark");
         }
     }
+
+
 </script>
 
 <style>
@@ -50,6 +55,8 @@
         min-width: 260px;
     }
 </style>
+
+<!--<div id="preload-screen"></div>-->
 
 <header>
     <hr>

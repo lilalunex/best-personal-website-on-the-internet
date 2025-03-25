@@ -3,12 +3,31 @@
     import {setGAConsent, resetGoogleAnalytics} from "$lib/js/google-analytics";
     import {breathingCircle} from "$lib/js/breathing-circle";
 
+    let showBackToTop = false;
+
     // @ts-ignore
     const buildTimestamp = __BUILD_TIMESTAMP__;
 
     onMount(() => {
         breathingCircle();
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll)
+        }
     });
+
+    const handleScroll = () => {
+        showBackToTop = window.scrollY > 600;
+    };
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        })
+    }
 </script>
 
 <style>
@@ -74,7 +93,8 @@
         </div>
         <div class="text-center flex flex-col justify-end gap-4 pb-4 md:pb-0">
             <div>
-                <button on:click={() => resetGoogleAnalytics()} class="hover:underline">Reset Google Analytics choice
+                <button on:click={() => resetGoogleAnalytics()} on:touchstart={() => resetGoogleAnalytics()} class="hover:underline">
+                    Reset Google Analytics choice
                 </button>
             </div>
             <div>
@@ -110,3 +130,13 @@
         </div>
     </div>
 </aside>
+
+<button
+        class="xl:hidden bg-muted-sand border-deeper-brown border-2 rounded-xl px-4 py-4 overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown fixed bottom-8 right-8 {showBackToTop ? 'opacity-100' : 'opacity-0 pointer-events-none'}"
+        on:click={scrollToTop}
+        aria-label="Back to Top"
+>
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up" viewBox="0 0 24 24">
+        <path d="M12 19V6M5 13l7-7 7 7"></path>
+    </svg>
+</button>

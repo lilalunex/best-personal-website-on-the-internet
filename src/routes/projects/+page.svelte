@@ -33,19 +33,24 @@
             </h1>
 
             <div class="flex items-center justify-center pt-8 gap-8">
-                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown" on:click={expandAll}>
+                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown"
+                        on:click={expandAll}>
                     <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Expand all</span>
                 </button>
-                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown" on:click={collapseAll}>
+                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:darkreader-earthy-brown"
+                        on:click={collapseAll}>
                     <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Collapse all</span>
                 </button>
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.present = !isOpen.present}>
-                    Present
-                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.present ? 'rotate-45' : ''}`}>+</span>
-                </button>
+                <h2>
+                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
+                            on:click={() => isOpen.present = !isOpen.present}>
+                        Present<span
+                            class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.present ? 'rotate-45' : ''}`}>+</span>
+                    </button>
+                </h2>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.present ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
                      aria-expanded={isOpen.present}>
@@ -69,10 +74,13 @@
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.future = !isOpen.future}>
-                    Upcoming
-                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.future ? 'rotate-45' : ''}`}>+</span>
-                </button>
+                <h2>
+                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
+                            on:click={() => isOpen.future = !isOpen.future}>
+                        Upcoming
+                        <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.future ? 'rotate-45' : ''}`}>+</span>
+                    </button>
+                </h2>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
@@ -82,19 +90,26 @@
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.past = !isOpen.past}>
-                    Past
-                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.past ? 'rotate-45' : ''}`}>+</span>
-                </button>
+                <h2>
+                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
+                            on:click={() => isOpen.past = !isOpen.past}>
+                        Past
+                        <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.past ? 'rotate-45' : ''}`}>+</span>
+                    </button>
+                </h2>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
-                            <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show me</a>
+                            <a href="/projects/one-handed-mobile-menu"
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show
+                                me</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2024 Website - Used learning Remix (React
                             Framework) -
-                            <a href="/projects/lilalunex_2024" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show me</a>
+                            <a href="/projects/lilalunex_2024"
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">Show
+                                me</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                             <a href="https://lilalunex.dev/first-vue-website/index.html"
@@ -109,10 +124,13 @@
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.ideas = !isOpen.ideas}>
-                    Ideas
-                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.ideas ? 'rotate-45' : ''}`}>+</span>
-                </button>
+                <h2>
+                    <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
+                            on:click={() => isOpen.ideas = !isOpen.ideas}>
+                        Ideas
+                        <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.ideas ? 'rotate-45' : ''}`}>+</span>
+                    </button>
+                </h2>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.ideas ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">

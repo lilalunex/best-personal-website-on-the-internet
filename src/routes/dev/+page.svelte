@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <div class="text-center xl:text-left">
-                    <figure>
+                    <figure class="mx-auto xl:mr-auto xl:ml-0">
                         <img src={randomImage} alt="Developer" class="rounded-3xl mx-auto xl:mx-0" />
                         <figcaption class="caption text-center pt-2">Picture: <a href="/partners">Sergej Dukkardt</a></figcaption>
                     </figure>

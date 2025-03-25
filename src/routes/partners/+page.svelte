@@ -17,7 +17,7 @@
             </h1>
             <div class="grid grid-cols-1 xl:grid-cols-2 pt-8">
                 <div>
-                    <img src="/dukkart.png" alt="Dukkart Digital" class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl">
+                    <img src="/partners/dukkart.png" alt="Dukkart Digital" class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl">
                 </div>
                 <div class="flex flex-col justify-center items-center">
                     <p class="text-3xl pt-8">DukkArt Digital</p>
@@ -51,7 +51,7 @@
                         <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Instagram</span></a>
                 </div>
                 <div class="order-1 xl:order-2">
-                    <img src="/jaxon.png" alt="Reza Jaxon" class="rounded-3xl mx-auto xl:ml-8">
+                    <img src="/partners/jaxon.png" alt="Reza Jaxon" class="rounded-3xl mx-auto xl:ml-8">
                 </div>
             </div>
 

@@ -33,11 +33,12 @@
             </h1>
 
             <div class="flex items-center justify-center pt-8 gap-8">
-                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4" on:click={expandAll}>
-                    Expand all
+                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                        on:click={expandAll}>
+                    <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Expand all</span>
                 </button>
-                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4" on:click={collapseAll}>
-                    Collapse all
+                <button class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown" on:click={collapseAll}>
+                    <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Collapse all</span>
                 </button>
             </div>
 
@@ -68,7 +69,8 @@
                             version)
                             on this website - Started to deepen PHP knowledge - Github
                             Repository:<a href="https://github.com/lilalunex/casino-simulation/"
-                                          class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This Tab</a><a
+                                          class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
+                            Tab</a><a
                                 href="https://github.com/lilalunex/casino-simulation/"
                                 class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">New
                             Tab</a>
@@ -89,20 +91,23 @@
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                     <div class="ml-8 pb-8">
                         <p class="pt-4"><span class="fw-bold">[X]</span> Idea: One handed mobile menu:
-                            <a href="/projects/one-handed-mobile-menu" class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
+                            <a href="/projects/one-handed-mobile-menu"
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4 hover:underline">This
                                 Tab</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2024 Website - Used learning Remix (React
                             Framework) -
                             <a href="https://lilalunex.netlify.app/"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This Tab</a>
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This
+                                Tab</a>
                             <a href="https://lilalunex.netlify.app/" target="_blank"
                                class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
                                 Tab</a>
                         </p>
                         <p class="pt-4"><span class="fw-bold">[X]</span> 2023 Website - Used learning VueJS -
                             <a href="https://lilalunex.dev/first-vue-website/index.html"
-                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This Tab</a>
+                               class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">This
+                                Tab</a>
                             <a href="https://lilalunex.dev/first-vue-website/index.html" target="_blank"
                                class="color-earthy-brown dark:color-darkreader-earthy-brown ml-4  hover:underline">New
                                 Tab</a>

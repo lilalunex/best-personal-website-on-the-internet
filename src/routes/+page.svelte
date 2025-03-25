@@ -33,8 +33,9 @@
             <div class="text-center pt-12">
                 <h3 class="text-xl font-semibold">
                     <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Contact Me"
-                       class="btn border-2 border-deeper-brown rounded-full px-16 py-8 mb-8 bg-body text-deeper-brown">Contact
-                        me</a>
+                       class="btn relative overflow-hidden border-2 border-deeper-brown rounded-full px-16 py-8 mb-8 bg-body text-deeper-brown transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)]">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Contact me</span>
+                    </a>
                 </h3>
             </div>
         </div>

@@ -23,15 +23,17 @@
                     <p class="text-3xl pt-8">DukkArt Digital</p>
                     <p class="text-2xl pt-2 pb-4">Photographer. Media Creator. Rental-studio.</p>
                     <a href="http://dukkart.de"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 mt-4 text-black dark:text-black"
-                       target="_blank"
-                       rel="noopener noreferrer">Photograpy-Website</a>
+                       class="px-8 py-4 mt-4 bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Photograpy-Website</span></a>
                     <a href="http://dreamstudiobadoeynhausen.de"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 mt-4 text-black dark:text-black" target="_blank"
-                       rel="noopener noreferrer">Rental-Studio</a>
+                       class="px-8 py-4 mt-4 bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Rental-Studio</span></a>
                     <a href="https://www.instagram.com/dukkart/"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 mt-4 text-black dark:text-black" target="_blank"
-                       rel="noopener noreferrer">Instagram</a>
+                       class="px-8 py-4 mt-4 bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Instagram</span></a>
                 </div>
             </div>
 
@@ -40,13 +42,13 @@
                     <p class="text-3xl pt-8">Reza Jaxon</p>
                     <p class="text-2xl pt-2 pb-4">Dancer. Graffiti Artist. Designer.</p>
                     <a href="https://shibuy.art/"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 mt-4 text-black dark:text-black"
-                       target="_blank"
-                       rel="noopener noreferrer">Art-Website</a>
+                       class="px-8 py-4 mt-4 bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Art-Website</span></a>
                     <a href="https://www.instagram.com/salvador_jaxon/"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4 mt-4 text-black dark:text-black"
-                       target="_blank"
-                       rel="noopener noreferrer">Instagram</a>
+                       class="px-8 py-4 mt-4 bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown"
+                       target="_blank" rel="noopener noreferrer">
+                        <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Instagram</span></a>
                 </div>
                 <div class="order-1 xl:order-2">
                     <img src="/jaxon.png" alt="Reza Jaxon" class="rounded-3xl mx-auto xl:ml-8">

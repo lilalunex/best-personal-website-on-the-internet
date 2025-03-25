@@ -16,13 +16,11 @@
                     <p class="text-2xl">Yet another Web Developer.</p>
                     <div class="flex ml-auto pt-8 gap-8 justify-center text-black dark:text-black">
                         <a href="https://github.com/lilalunex" aria-label="GitHub Profile"
-                           class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">
-                            GitHub
-                        </a>
+                           class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown">
+                            <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">GitHub</span></a>
                         <a href="https://www.linkedin.com/in/lilalunex/" aria-label="LinkedIn Profile"
-                           class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">
-                            LinkedIn
-                        </a>
+                           class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown">
+                            <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">LinkedIn</span></a>
                     </div>
                 </div>
                 <div class="text-center xl:text-left">
@@ -133,12 +131,12 @@
             </div>
 
             <div>
-                <div class="text-center pb-8 pt-16 text-black dark:text-black">
-                    <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Contact Me"
-                       class="bg-muted-sand border-deeper-brown border-2 rounded-xl px-8 py-4">Contact me</a>
+                <div class="text-center pb-8 pt-16 text-black dark:text-black"><a
+                        href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Contact Me"
+                        class="bg-muted-sand border-deeper-brown dark:bg-darkreader-muted-sand dark:border-darkreader-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-earthy-brown dark:text-darkreader-earthy-brown">
+                    <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Contact me</span></a>
                 </div>
             </div>
-
             <div class="text-center pb-4">
                 <br>
                 <p class="ch-65 mx-auto">

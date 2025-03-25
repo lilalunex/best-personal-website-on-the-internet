@@ -1,5 +1,6 @@
 <script>
     import { onMount } from 'svelte';
+    import { fade } from 'svelte/transition';
 
     let images = [
         '/dev/dev1.jpg',
@@ -8,11 +9,18 @@
         '/dev/dev4.jpeg'
     ];
 
-    let randomImage = '';
+    let randomImage = images[0];
+    let showImage = true;
 
     onMount(() => {
-        const randomIndex = Math.floor(Math.random() * images.length);
-        randomImage = images[randomIndex];
+        setInterval(() => {
+            showImage = false; // Fade out the old image
+            setTimeout(() => {
+                const randomIndex = Math.floor(Math.random() * images.length);
+                randomImage = images[randomIndex];
+                showImage = true; // Fade in the new image
+            }, 500); // Match this delay with fade duration
+        }, 9000);
     });
 </script>
 
@@ -43,7 +51,11 @@
                 </div>
                 <div class="text-center xl:text-left">
                     <figure class="mx-auto xl:mr-auto xl:ml-0">
-                        <img src={randomImage} alt="Developer" class="rounded-3xl mx-auto xl:mx-0" />
+                        {#if showImage}
+                            <img src={randomImage} alt="Developer"
+                                 class="rounded-3xl mx-auto xl:mx-0"
+                                 transition:fade={{ duration: 500 }} />
+                        {/if}
                         <figcaption class="caption text-center pt-2">Picture: <a href="/partners">Sergej Dukkardt</a></figcaption>
                     </figure>
                 </div>

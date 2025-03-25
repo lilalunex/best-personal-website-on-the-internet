@@ -11,8 +11,8 @@
 
 <svelte:component this={Header} />
 
-<main>
+<!--<main>-->
     <slot />
-</main>
+<!--</main>-->
 
 <svelte:component this={Footer} />

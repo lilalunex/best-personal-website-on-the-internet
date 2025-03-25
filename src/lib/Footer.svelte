@@ -46,6 +46,10 @@
                 <a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Feedback"
                    class="hover:underline">Feedback</a>
             </div>
+            <div>
+                <a href="/footer/credits"
+                   class="hover:underline">Credits</a>
+            </div>
         </div>
         <div class="text-center flex flex-col items-center gap-4 pb-4 md:pb-0">
             <div class="flex">
@@ -96,9 +100,6 @@
                 <button on:click={() => resetGoogleAnalytics()} on:touchstart={() => resetGoogleAnalytics()} class="hover:underline">
                     Reset Google Analytics choice
                 </button>
-            </div>
-            <div>
-                <br>
             </div>
             <div><a href="/footer/imprint" class="hover:underline">Imprint</a></div>
             <div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>

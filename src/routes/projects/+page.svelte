@@ -42,22 +42,9 @@
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
-                        on:click={() => isOpen.future = !isOpen.future} aria-expanded={isOpen.future}>
-                    Future {isOpen.future ? "-" : "+"}
-                </button>
-
-                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
-                    <div class="ml-8 pb-8">
-                        <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
-                        on:click={() => isOpen.present = !isOpen.present}>
-                    Present {isOpen.present ? "-" : "+"}
+                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.present = !isOpen.present}>
+                    Present
+                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.present ? 'rotate-45' : ''}`}>+</span>
                 </button>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.present ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}
@@ -75,16 +62,29 @@
                             Tab</a>
                         </p>
                         <p class="pt-4">
-                            <span class="fw-bold">[ ]</span> The Website you currently on (2025 Website)
+                            <span class="fw-bold">[ ]</span> The Website you currently on
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
-                        on:click={() => isOpen.past = !isOpen.past} aria-expanded={isOpen.past}>
-                    Past {isOpen.past ? "-" : "+"}
+                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.future = !isOpen.future}>
+                    Upcoming
+                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.future ? 'rotate-45' : ''}`}>+</span>
+                </button>
+
+                <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
+                    <div class="ml-8 pb-8">
+                        <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
+                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.past = !isOpen.past}>
+                    Past
+                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.past ? 'rotate-45' : ''}`}>+</span>
                 </button>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.past ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
@@ -109,9 +109,9 @@
             </div>
 
             <div class="my-8 md:my-16 border-2 border-golden-tan rounded-xl text-earthy-brown dark:text-darkreader-earthy-brown">
-                <button class="cursor-pointer text-2xl pl-8 py-4 w-full text-left"
-                        on:click={() => isOpen.ideas = !isOpen.ideas} aria-expanded={isOpen.ideas}>
-                    Ideas {isOpen.ideas ? "-" : "+"}
+                <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center" on:click={() => isOpen.ideas = !isOpen.ideas}>
+                    Ideas
+                    <span class={`absolute right-4 bottom-3.5 text-5xl transition-transform duration-300 transform ${isOpen.ideas ? 'rotate-45' : ''}`}>+</span>
                 </button>
 
                 <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.ideas ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>

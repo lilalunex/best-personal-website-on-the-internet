@@ -6,6 +6,7 @@
     // import '$lib/styles/preload-screen.css';
 
     const dispatch = createEventDispatcher();
+    const mainBackgroundCookie = "mainBackground";
 
     let darkMode = false;
     let menuOpen = false;
@@ -13,7 +14,6 @@
 
     onMount(() => {
         body = document.body.classList;
-
         darkMode = localStorage.getItem("darkMode") === "true";
 
         updateTheme();
@@ -45,6 +45,12 @@
 
     function toggleMainClass() {
         dispatch('toggleMainClass');
+        let temp = localStorage.getItem(mainBackgroundCookie)
+        if(temp == "true") {
+            localStorage.setItem(mainBackgroundCookie, "false");
+        } else {
+            localStorage.setItem(mainBackgroundCookie, "true");
+        }
     }
 </script>
 

@@ -40,7 +40,7 @@ html, .mobile-nav-wrapper {
 }
 
 main {
-    transition: .3s;
+    transition: .6s;
     animation: ease-in-out;
 }
 

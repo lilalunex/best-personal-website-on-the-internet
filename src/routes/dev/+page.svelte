@@ -3,23 +3,29 @@
     import {fade} from 'svelte/transition';
 
     let images = [
-        '/dev/dev1.jpg',
-        '/dev/dev2.jpg',
-        '/dev/dev3.jpg',
-        '/dev/dev4.jpeg'
+        "/dev/dev1.jpg",
+        "/dev/dev2.jpg",
+        "/dev/dev3.jpg",
+        "/dev/dev4.jpeg"
     ];
 
     let randomImage = images[0];
     let showImage = true;
+    let lastIndex = 0;
 
     onMount(() => {
         setInterval(() => {
-            showImage = false; // Fade out the old image
+            showImage = false;
             setTimeout(() => {
-                const randomIndex = Math.floor(Math.random() * images.length);
+                let randomIndex;
+                do {
+                    randomIndex = Math.floor(Math.random() * images.length);
+                } while (randomIndex === lastIndex);
+
+                lastIndex = randomIndex;
                 randomImage = images[randomIndex];
-                showImage = true; // Fade in the new image
-            }, 500); // Match this delay with fade duration
+                showImage = true;
+            }, 500);
         }, 9000);
     });
 </script>

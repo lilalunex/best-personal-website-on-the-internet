@@ -116,7 +116,8 @@
        class="border-3 dark:border-darkreader-golden-tan rounded-2xl show hide border-golden-tan dark:bg-darkreader-soft-cream text-footer-link dark:text-darkreader-earthy-brown">
     <div class="p-2 md:p-8">
         <h3 id="cookie-heading" class="text-center">Google Analytics</h3>
-        <div class="flex justify-between pt-8 md:pt-12 gap-2 md:gap-16">
+	<p class="italic text-center pt-4">Give me your juicy Cookies ...</p>
+        <div class="flex justify-between pt-8 md:pt-8 gap-2 md:gap-16">
             <div>
                 <button on:click={() => setGAConsent("true")}
                         class="bg-bg-button-1 border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-footer-link dark:darkreader-earthy-brown">

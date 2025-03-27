@@ -8,7 +8,7 @@
             <!--                <p class="pt-8">Thanks to Sparklykitten for helping me with the design.</p>-->
             <p class="pt-8">Thanks to my parents for always supporting me in what I do.</p>
             <p class="pt-8">Thanks to <a href="https://www.youtube.com/c/theprimeagen"
-                                         class="underline">ThePrimeagen</a> for motivating me to be a Programmer outside
+                                         class="underline">ThePrimeagen</a> for motivating me to be a programmer outside
                 of work.</p>
             <p class="pt-8">Thanks to my clients for putting their trust in me.</p>
             <p class="pt-8">Thanks to my (previous) employers for giving me a chance.</p>

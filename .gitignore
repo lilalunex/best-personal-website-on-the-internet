@@ -4,6 +4,7 @@
 src/lib/js/env.ts
 vit-env.d.ts
 *Zone.Identifier
+/static/casino-simulation/
 
 node_modules
 
@@ -28,3 +29,4 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+

@@ -12,8 +12,7 @@
                 of work.</p>
             <p class="pt-8">Thanks to my clients for putting their trust in me.</p>
             <p class="pt-8">Thanks to my (previous) employers for giving me a chance.</p>
-            <p class="pt-8">Thanks to myself for putting so much work in.<br>(Website is about breathing and taking
-                time, and here I am working deep into every single night hehe)</p>
+            <p class="pt-8">Thanks to myself for putting so much work in.</p>
         </div>
 
     </div>

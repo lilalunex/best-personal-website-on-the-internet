@@ -107,7 +107,7 @@
         </div>
     </div>
     <div class="flex justify-center items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">
-        <small>build on: {buildTimestamp}</small>
+        <a href="https://github.com/lilalunex/best-personal-website-on-the-internet/"><small>build on: {buildTimestamp}</small></a>
     </div>
 <!--    <hr>-->
 </footer>

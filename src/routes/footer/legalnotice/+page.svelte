@@ -24,7 +24,7 @@
             pages.
         </p>
 
-        <h2 class="pt-8 title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
+        <h2 class="pt-8 breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
             Impressum (German)</h2>
         <p class="pt-4">
             Angaben gemäß § 5 TMG (Telemediengesetz)<br><br>

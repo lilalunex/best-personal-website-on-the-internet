@@ -102,7 +102,7 @@
                     Reset Google Analytics choice
                 </button>
             </div>
-            <div><a href="/footer/imprint" class="hover:underline">Imprint</a></div>
+            <div><a href="/footer/legalnotice" class="hover:underline">Legal Notice</a></div>
             <div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
         </div>
     </div>

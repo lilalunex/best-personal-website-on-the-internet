@@ -35,7 +35,7 @@
         <div class="flex items-center justify-center pt-8 gap-8">
             <button class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-p dark:darkreader-earthy-brown"
                     on:click={expandAll}>
-            <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-button-hover-underline-1 before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Expand all</span>
+                <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-button-hover-underline-1 before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Expand all</span>
             </button>
             <button class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-p dark:darkreader-earthy-brown"
                     on:click={collapseAll}>
@@ -55,6 +55,8 @@
             <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.future ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div class="ml-8 pb-8">
                     <p class="pt-4"><span class="fw-bold">[ ]</span> The Coworking Hub</p>
+                    <p class="pt-4"><span class="fw-bold">[ ]</span> <span class="italic">Make this page better looking...</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -72,9 +74,10 @@
                  aria-expanded={isOpen.present}>
                 <div class="ml-8 pb-8">
                     <p class="pt-4">
-                        <span class="fw-bold">[ ]</span> Casino Simulation - Soon online and playable (in a web
-                        version)
-                        on this website - Started to deepen PHP knowledge - Github
+                        <span class="fw-bold">[ ]</span> Casino Simulation - <a
+                            href="https://lilalunex.dev/casino-simulation/index.php"
+                            class="color-project-link-ctrl dark:color-darkreader-earthy-brown hover:underline underline">Playable
+                        here</a> - Github
                         Repository:<a href="https://github.com/lilalunex/casino-simulation/"
                                       class="color-project-link-ctrl dark:color-darkreader-earthy-brown ml-4 hover:underline underline">This
                         Tab</a><a
@@ -140,8 +143,6 @@
 
             <div class={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen.ideas ? "max-h-100 opacity-100" : "max-h-0 opacity-0"}`}>
                 <div class="ml-8 pb-8">
-                    <p class="pt-4 italic">- Make this page better looking...
-                    </p>
                     <p class="pt-4">- GUI for Casino Simulation -> release as actual game
                         (Go directly all in and it with Rust...?)</p>
                     <p class="pt-4">- Socialize Browser MMO - Idea come from to have something to

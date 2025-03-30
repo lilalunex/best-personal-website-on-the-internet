@@ -14,7 +14,7 @@
     let menuOpen = false;
     let body: DOMTokenList;
     let showModsDesktop = false;
-    let showModsMobile = true;
+    let showModsMobile = false;
     let blendMode = 0;
     let mixMode = 0;
 

@@ -14,10 +14,10 @@
         <h1 class="title text-center underline breathing-title text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
             Partners
         </h1>
-        <div class="xl:flex justify-center gap-8 pt-8">
-            <div>
+        <div class="grid xl:flex justify-center pt-16 pb-8">
+            <div class="flex flex-col justify-center items-center">
                 <img src="/partners/dukkart.png" alt="Dukkart Digital"
-                     class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl">
+                     class="mx-auto xl:ml-auto xl:mr-8 rounded-3xl rounded-xl border-4 border-golden-tan">
             </div>
             <div class="flex flex-col justify-center items-center">
                 <p class="text-3xl pt-8">DukkArt Digital</p>
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <div class="grid xl:flex justify-center gap-8 pt-16 pb-8">
+        <div class="grid xl:flex justify-center pt-16 pb-8">
             <div class="flex flex-col justify-center items-center order-2 xl:order-1">
                 <p class="text-3xl pt-8">Reza Jaxon</p>
                 <p class="text-2xl pt-2 pb-4">Dancer. Graffiti Artist. Designer.</p>
@@ -51,7 +51,7 @@
                     <span class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Instagram</span></a>
             </div>
             <div class="order-1 xl:order-2">
-                <img src="/partners/jaxon.png" alt="Reza Jaxon" class="rounded-3xl mx-auto xl:ml-8">
+                <img src="/partners/jaxon.png" alt="Reza Jaxon" class="rounded-3xl mx-auto xl:ml-8 rounded-xl border-4 border-golden-tan">
             </div>
         </div>
 

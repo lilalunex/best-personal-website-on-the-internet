@@ -3,10 +3,12 @@
     import {setGAConsent, resetGoogleAnalytics} from "$lib/js/google-analytics";
     import {breathingCircle} from "$lib/js/breathing-circle";
 
-    let showBackToTop = false;
-
     // @ts-ignore
     const buildTimestamp = __BUILD_TIMESTAMP__;
+
+    let showBackToTop = false;
+    let showUnixtimestamp = true;
+    let timestampHumanReadable = new Date(buildTimestamp * 1000).toLocaleString();
 
     onMount(() => {
         breathingCircle();
@@ -107,16 +109,20 @@
         </div>
     </div>
     <div class="flex justify-center items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">
-        <a href="https://github.com/lilalunex/best-personal-website-on-the-internet/"><small>build on: {buildTimestamp}</small></a>
+        <button on:click={() => showUnixtimestamp = !showUnixtimestamp}>
+            <small>build on:
+                {#if showUnixtimestamp}{buildTimestamp}{:else}{timestampHumanReadable}{/if}
+            </small>
+        </button>
     </div>
-<!--    <hr>-->
+    <!--    <hr>-->
 </footer>
 
 <aside id="cookies-banner" aria-labelledby="cookie-heading"
        class="border-3 dark:border-darkreader-golden-tan rounded-2xl show hide border-golden-tan dark:bg-darkreader-soft-cream text-footer-link dark:text-darkreader-earthy-brown">
     <div class="p-2 md:p-8">
         <h3 id="cookie-heading" class="text-center">Google Analytics</h3>
-	<p class="italic text-center pt-4">Give me your juicy Cookies ...</p>
+        <p class="italic text-center pt-4">Give me your juicy Cookies ...</p>
         <div class="flex justify-between pt-8 md:pt-8 gap-2 md:gap-16">
             <div>
                 <button on:click={() => setGAConsent("true")}

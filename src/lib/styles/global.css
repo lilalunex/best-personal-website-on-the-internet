@@ -184,6 +184,10 @@ p.ch-65 {
     max-width: 65ch;
 }
 
+hr {
+    border-top: 2px solid var(--golden-tan);
+}
+
 footer hr:first-of-type {
     border-top: 2px solid #123;
     border-bottom: none;

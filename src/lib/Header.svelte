@@ -258,31 +258,31 @@
                         </button>
                     </div>
                 </div>
-<!--                <div class="flex flex-col items-center">-->
-<!--                    <p class="text-center">Mix Mode</p>-->
-<!--                    <div class="flex flex-row gap-2">-->
-<!--                        <button on:click={() => backgroundMixMode(-1)}-->
-<!--                                class="border-earthy-brown border-2 rounded-xl p-2 w-12 h-12 flex justify-center items-center"-->
-<!--                                aria-label="Decrease mix mode">-->
-<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"-->
-<!--                                 fill="none"-->
-<!--                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"-->
-<!--                                 class="w-6 h-6">-->
-<!--                                <path d="M14 18l-6-6 6-6"></path>-->
-<!--                            </svg>-->
-<!--                        </button>-->
-<!--                        <button on:click={() => backgroundMixMode(1)}-->
-<!--                                class="border-earthy-brown border-2 rounded-xl p-2 w-12 h-12 flex justify-center items-center"-->
-<!--                                aria-label="Increase mix mode">-->
-<!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"-->
-<!--                                 fill="none"-->
-<!--                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"-->
-<!--                                 class="w-6 h-6">-->
-<!--                                <path d="M10 6l6 6-6 6"></path>-->
-<!--                            </svg>-->
-<!--                        </button>-->
-<!--                    </div>-->
-<!--                </div>-->
+                <!--                <div class="flex flex-col items-center">-->
+                <!--                    <p class="text-center">Mix Mode</p>-->
+                <!--                    <div class="flex flex-row gap-2">-->
+                <!--                        <button on:click={() => backgroundMixMode(-1)}-->
+                <!--                                class="border-earthy-brown border-2 rounded-xl p-2 w-12 h-12 flex justify-center items-center"-->
+                <!--                                aria-label="Decrease mix mode">-->
+                <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"-->
+                <!--                                 fill="none"-->
+                <!--                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"-->
+                <!--                                 class="w-6 h-6">-->
+                <!--                                <path d="M14 18l-6-6 6-6"></path>-->
+                <!--                            </svg>-->
+                <!--                        </button>-->
+                <!--                        <button on:click={() => backgroundMixMode(1)}-->
+                <!--                                class="border-earthy-brown border-2 rounded-xl p-2 w-12 h-12 flex justify-center items-center"-->
+                <!--                                aria-label="Increase mix mode">-->
+                <!--                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"-->
+                <!--                                 fill="none"-->
+                <!--                                 stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"-->
+                <!--                                 class="w-6 h-6">-->
+                <!--                                <path d="M10 6l6 6-6 6"></path>-->
+                <!--                            </svg>-->
+                <!--                        </button>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
             <div class="flex justify-center pt-4">
                 <button on:click={resetBackground} class="border-earthy-brown border-2 rounded-xl py-2 px-4">

@@ -83,6 +83,8 @@
     function resetBackground() {
         html.classList.remove("mix" + mixMode);
         html.classList.remove("blend" + blendMode);
+        blendMode = 0;
+        mixMode = 0;
     }
 </script>
 

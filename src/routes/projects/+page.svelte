@@ -132,7 +132,7 @@
             </div>
         </div>
 
-        <div class="my-8 md:my-16 border-2 border-button-ctrl-2 rounded-xl text-p text-color-ctrl dark:text-darkreader-earthy-brown">
+        <div class="my-8 border-2 border-button-ctrl-2 rounded-xl text-p text-color-ctrl dark:text-darkreader-earthy-brown">
             <h2>
                 <button class="relative cursor-pointer text-2xl pl-8 py-4 w-full text-left flex justify-between items-center"
                         on:click={() => isOpen.ideas = !isOpen.ideas}>

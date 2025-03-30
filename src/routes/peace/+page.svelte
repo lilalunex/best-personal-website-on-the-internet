@@ -13,7 +13,7 @@
             <div class="dark:text-darkreader-earthy-brown">
                 <div class="container mx-auto">
 
-                    <div class="pt-8 text-center">
+                    <div class="text-center">
                         <h2 class="italic text-3xl pt-8">Mindful & Intentional</h2>
                         <p class="text-xl pt-8 leading-8">
                             The machines are there to make our lives easier. Not to replace them.<br>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
 
-                <img src="/lotus.png" alt="Lotus" class="mx-auto py-16">
+                <img src="/lotus.png" alt="Lotus" class="mx-auto py-8">
 
             </div>
 

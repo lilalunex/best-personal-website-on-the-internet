@@ -5,7 +5,8 @@
         </h1>
 
         <div class="text-center">
-            <!--                <p class="pt-8">Thanks to Sparklykitten for helping me with the design.</p>-->
+            <p class="pt-8">Thanks to developers for creating open source projects, helping new developers and sharing
+                their knowledge.<br>If only more of the world would be like this part of the internet.</p>
             <p class="pt-8">Thanks to my parents for always supporting me in what I do.</p>
             <p class="pt-8">Thanks to <a href="https://www.youtube.com/c/theprimeagen"
                                          class="underline">ThePrimeagen</a> for motivating me to be a programmer outside

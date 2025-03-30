@@ -1,7 +1,7 @@
-<script>
-    const VITE_ADR_1 = import.meta.env.VITE_ADR_1;
-    const VITE_ADR_2 = import.meta.env.VITE_ADR_2;
-    const VITE_ADR_3 = import.meta.env.VITE_ADR_3;
+<script lang="ts">
+    const VITE_ADR_1: string = import.meta.env.VITE_ADR_1;
+    const VITE_ADR_2: string = import.meta.env.VITE_ADR_2;
+    const VITE_ADR_3: string = import.meta.env.VITE_ADR_3;
 </script>
 
 <style>
@@ -20,11 +20,12 @@
             {VITE_ADR_3}<br>
             <br>
             Contact:<br>
-            E-Mail: <img src="/footer/mail.png" alt="E-Mail" class="inline mb-2"><br>
-            Website: www.lilalunex.dev<br>
-            Phone: <img src="/footer/phone.png" alt="Phone" class="inline mb-2"><br>
+            E-Mail: <img src="/footer/mail.png" alt="E-Mail address" class="inline mb-1"><br>
+            Phone: <img src="/footer/phone.png" alt="Phone number" class="inline mb-2"><br>
             <br>
-
+            Tax ID.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
+            Website: www.lilalunex.dev<br>
+            <br>
             Disclaimer:<br><br>
 
             The content of our pages has been created with the utmost care. However, we cannot guarantee the
@@ -49,9 +50,11 @@
             {VITE_ADR_3}<br>
             <br>
             Kontakt:<br>
-            E-Mail: <img src="/footer/mail.png" alt="E-Mail" class="inline mb-2"><br>
+            E-Mail: <img src="/footer/mail.png" alt="E-Mail Adresse" class="inline mb-1"><br>
+            Telefon: <img src="/footer/phone.png" alt="Telefon Nummer" class="inline mb-2"><br>
+            <br>
+            Steuer-Nr.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
             Website: www.lilalunex.dev<br>
-            Telefon: <img src="/footer/phone.png" alt="Telefon" class="inline mb-2"><br>
             <br>
             Haftungsausschluss:<br><br>
 

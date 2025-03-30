@@ -76,7 +76,7 @@
 
     function backgroundMixMode(direction: number) {
         html.classList.remove("mix" + mixMode);
-        mixMode = (mixMode + direction + 5) % 5;
+        mixMode = (mixMode + direction + 4) % 4;
         html.classList.add("mix" + mixMode);
     }
 

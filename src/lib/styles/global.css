@@ -103,14 +103,10 @@ html.mix1 {
 }
 
 html.mix2 {
-    mix-blend-mode: exclusion;
-}
-
-html.mix3 {
     mix-blend-mode: hard-light;
 }
 
-html.mix4 {
+html.mix3 {
     mix-blend-mode: luminosity;
 }
 

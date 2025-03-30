@@ -9,7 +9,7 @@
     const dispatch = createEventDispatcher();
     const mainBackgroundCookie = "mainBackground";
 
-    let html;
+    let html: HTMLElement;
     let darkMode = false;
     let menuOpen = false;
     let body: DOMTokenList;
@@ -68,13 +68,13 @@
         showModsMobile = !showModsMobile;
     }
 
-    function backgroundBlendMode(direction) {
+    function backgroundBlendMode(direction: number) {
         html.classList.remove("blend" + blendMode);
         blendMode = (blendMode + direction + 16) % 16;
         html.classList.add("blend" + blendMode);
     }
 
-    function backgroundMixMode(direction) {
+    function backgroundMixMode(direction: number) {
         html.classList.remove("mix" + mixMode);
         mixMode = (mixMode + direction + 7) % 7;
         html.classList.add("mix" + mixMode);
@@ -154,7 +154,8 @@
                     <div>
                         <p class="text-center">Blend Mode</p>
                         <button on:click={() => backgroundBlendMode(-1)}
-                                class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                                class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                                aria-label="Decrease blend mode">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                                  fill="none"
                                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -162,7 +163,8 @@
                             </svg>
                         </button>
                         <button on:click={() => backgroundBlendMode(1)}
-                                class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                                class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                                aria-label="Increase blend mode">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                                  fill="none"
                                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -173,7 +175,8 @@
                     <div>
                         <p class="text-center">Mix Mode</p>
                         <button on:click={() => backgroundMixMode(-1)}
-                                class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                                class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                                aria-label="Decrease mix mode">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                                  fill="none"
                                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -181,7 +184,8 @@
                             </svg>
                         </button>
                         <button on:click={() => backgroundMixMode(1)}
-                                class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                                class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                                aria-label="Decrease mix mode">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                                  fill="none"
                                  stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -232,7 +236,8 @@
                 <div>
                     <p class="text-center">Blend Mode</p>
                     <button on:click={() => backgroundBlendMode(-1)}
-                            class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                            class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                            aria-label="Decrease blend mode">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                              fill="none"
                              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -240,7 +245,8 @@
                         </svg>
                     </button>
                     <button on:click={() => backgroundBlendMode(1)}
-                            class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                            class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                            aria-label="Increase blend mode">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                              fill="none"
                              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -251,7 +257,8 @@
                 <div>
                     <p class="text-center">Mix Mode</p>
                     <button on:click={() => backgroundMixMode(-1)}
-                            class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                            class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                            aria-label="Decrease mix mode">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                              fill="none"
                              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -259,7 +266,8 @@
                         </svg>
                     </button>
                     <button on:click={() => backgroundMixMode(1)}
-                            class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                            class="border-earthy-brown border-2 rounded-xl py-2 px-4"
+                            aria-label="Increase mix mode">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="4 4 16 16"
                              fill="none"
                              stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">

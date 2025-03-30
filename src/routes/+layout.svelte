@@ -7,12 +7,12 @@
     import '$lib/styles/breathing-title.css';
     import {onMount} from "svelte";
 
-    const Header = HeaderComponent;
-    const Footer = FooterComponent;
-    const mainBackgroundCookie = "mainBackground";
+    const Header: typeof HeaderComponent = HeaderComponent;
+    const Footer: typeof FooterComponent = FooterComponent;
+    const mainBackgroundCookie: string = "mainBackground";
 
     let mainElement: HTMLElement;
-    let mainBackground = "true";
+    let mainBackground: string = "true";
 
     onMount(() => {
         let temp = localStorage.getItem(mainBackgroundCookie);

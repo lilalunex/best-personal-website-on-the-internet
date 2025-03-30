@@ -4,11 +4,11 @@
     import {breathingCircle} from "$lib/js/breathing-circle";
 
     // @ts-ignore
-    const buildTimestamp = __BUILD_TIMESTAMP__;
+    const buildTimestamp: number = __BUILD_TIMESTAMP__;
 
-    let showBackToTop = false;
-    let showUnixtimestamp = true;
-    let timestampHumanReadable = new Date(buildTimestamp * 1000).toLocaleString();
+    let showBackToTop: boolean = false;
+    let showUnixTimestamp: boolean = true;
+    let timestampHumanReadable: string = new Date(buildTimestamp * 1000).toLocaleString();
 
     onMount(() => {
         breathingCircle();
@@ -109,9 +109,9 @@
         </div>
     </div>
     <div class="flex justify-center items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">
-        <button on:click={() => showUnixtimestamp = !showUnixtimestamp}>
+        <button on:click={() => showUnixTimestamp = !showUnixTimestamp}>
             <small>build on:
-                {#if showUnixtimestamp}{buildTimestamp}{:else}{timestampHumanReadable}{/if}
+                {#if showUnixTimestamp}{buildTimestamp}{:else}{timestampHumanReadable}{/if}
             </small>
         </button>
     </div>

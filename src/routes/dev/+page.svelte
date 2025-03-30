@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {onMount} from 'svelte';
     import {fade} from 'svelte/transition';
 
@@ -9,9 +9,9 @@
         "/dev/dev4.jpeg"
     ];
 
-    let randomImage = images[0];
-    let showImage = true;
-    let lastIndex = 0;
+    let randomImage: string = images[0];
+    let showImage: boolean = true;
+    let lastIndex: number = 0;
 
     onMount(() => {
         setInterval(() => {

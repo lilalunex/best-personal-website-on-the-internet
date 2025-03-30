@@ -1,22 +1,22 @@
 <script lang="ts">
     import {fade} from "svelte/transition";
-    import {createEventDispatcher} from "svelte";
+    import {createEventDispatcher, type EventDispatcher} from "svelte";
     import Menu from '$lib/Menu.svelte';
     import {onMount} from "svelte";
     // import { removePreloadScreen} from "$lib/js/preload-screen";
     // import '$lib/styles/preload-screen.css';
 
-    const dispatch = createEventDispatcher();
-    const mainBackgroundCookie = "mainBackground";
+    const dispatch: EventDispatcher<{ toggleMainClass: void }> = createEventDispatcher();
+    const mainBackgroundCookie: string = "mainBackground";
 
     let html: HTMLElement;
-    let darkMode = false;
-    let menuOpen = false;
+    let darkMode: boolean = false;
+    let menuOpen: boolean = false;
     let body: DOMTokenList;
-    let showModsDesktop = false;
-    let showModsMobile = false;
-    let blendMode = 0;
-    let mixMode = 0;
+    let showModsDesktop: boolean = false;
+    let showModsMobile: boolean = false;
+    let blendMode: number = 0;
+    let mixMode: number = 0;
 
     onMount(() => {
         html = document.documentElement;

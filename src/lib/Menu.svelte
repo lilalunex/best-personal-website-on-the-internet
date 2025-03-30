@@ -2,12 +2,12 @@
     export let closeMenu: () => void;
 
     const menuItems = [
-        { name: "Home", href: "/" },
-        { name: "Dev", href: "/dev" },
-        { name: "Projects", href: "/projects" },
-        { name: "Partners", href: "/partners" },
-        { name: "Ad-Space", href: "/ad-space" },
-        { name: "Peace", href: "/peace" }
+        {name: "Home", href: "/"},
+        {name: "Dev", href: "/dev"},
+        {name: "Projects", href: "/projects"},
+        {name: "Partners", href: "/partners"},
+        {name: "Ad-Space", href: "/ad-space"},
+        {name: "Peace", href: "/peace"}
     ];
 </script>
 
@@ -27,7 +27,5 @@
                 {item.name}
             </a>
         </li>
-
-
     {/each}
 </ul>

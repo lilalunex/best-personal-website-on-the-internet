@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
 
-    let titleText = "Relax, Breath & Move.";
+    let titleText: string = "Relax, Breath & Move.";
 
     onMount(() => {
         if (Math.random() < 0.0821) {

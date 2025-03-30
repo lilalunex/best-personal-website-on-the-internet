@@ -1,7 +1,7 @@
 import CONFIG from "./env";
 
 let banner: HTMLElement | null;
-const COOKIE_KEY = "cookieGoogleAnalytics";
+const COOKIE_KEY: string = "cookieGoogleAnalytics";
 
 if (typeof window !== "undefined") {
     banner = document.getElementById("cookies-banner");

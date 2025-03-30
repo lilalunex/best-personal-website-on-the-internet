@@ -4,7 +4,7 @@ export function breathingCircle(): void {
 
     const stages: string[] = ["breathe in", "hold", "breathe out"];
     const timings: number[] = [3400, 2000, 2600];
-    let index = 0;
+    let index: number = 0;
 
     const updateText = (): void => {
         if (!breathingText) return;

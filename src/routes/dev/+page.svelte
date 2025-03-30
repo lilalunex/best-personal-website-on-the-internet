@@ -58,7 +58,7 @@
                 <figure class="mx-auto xl:mr-auto xl:ml-0">
                     {#if showImage}
                         <img src={randomImage} alt="Developer"
-                             class="rounded-3xl mx-auto xl:mx-0"
+                             class="rounded-3xl mx-auto xl:mx-0 border-4 border-golden-tan"
                              transition:fade={{ duration: 500 }}/>
                     {/if}
                     <figcaption class="caption text-center pt-2">Picture: <a href="/partners">Sergej Dukkardt</a>

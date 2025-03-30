@@ -99,32 +99,32 @@ html.blend15 {
 }
 
 html.mix1 {
-    mix-blend-mode: darken;
-}
-
-html.mix2 {
     mix-blend-mode: difference;
 }
 
-html.mix3 {
+html.mix2 {
     mix-blend-mode: exclusion;
 }
 
-html.mix4 {
+html.mix3 {
     mix-blend-mode: hard-light;
 }
 
-html.mix5 {
+html.mix4 {
     mix-blend-mode: luminosity;
-}
-
-html.mix6 {
-    mix-blend-mode: multiply;
 }
 
 main {
     transition: .6s;
     animation: ease-in-out;
+}
+
+:not(main.bg-ctrl) .h2-color-ctrl {
+    color: var(--soft-gold);
+}
+
+main.bg-ctrl .h2-color-ctrl {
+    color: var(--golden-tan);
 }
 
 main.bg-ctrl {
@@ -180,7 +180,7 @@ p.build {
     font-size: 16px;
 }
 
-p.ch-65 {
+.ch-65 {
     max-width: 65ch;
 }
 

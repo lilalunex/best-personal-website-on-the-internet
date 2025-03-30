@@ -3,8 +3,8 @@
 
     const menuItems = [
         { name: "Home", href: "/" },
-        { name: "Projects", href: "/projects" },
         { name: "Dev", href: "/dev" },
+        { name: "Projects", href: "/projects" },
         { name: "Partners", href: "/partners" },
         { name: "Ad-Space", href: "/ad-space" },
         { name: "Peace", href: "/peace" }

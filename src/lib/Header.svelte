@@ -13,8 +13,8 @@
     let darkMode = false;
     let menuOpen = false;
     let body: DOMTokenList;
-    let showModsDesktop = false;
-    let showModsMobile = false;
+    let showModsDesktop = true;
+    let showModsMobile = true;
     let blendMode = 0;
     let mixMode = 0;
 
@@ -152,7 +152,7 @@
             <div class="absolute top-30 right-8 hidden xl:block" transition:fade>
                 <div class="flex gap-4">
                     <div>
-                        <p class="text-center">Blend Mode</p>
+                        <p class="text-center">Blend Mode ({blendMode})</p>
                         <button on:click={() => backgroundBlendMode(-1)}
                                 class="border-earthy-brown border-2 rounded-xl py-2 px-4"
                                 aria-label="Decrease blend mode">
@@ -173,7 +173,7 @@
                         </button>
                     </div>
                     <div>
-                        <p class="text-center">Mix Mode</p>
+                        <p class="text-center">Mix Mode ({mixMode})</p>
                         <button on:click={() => backgroundMixMode(-1)}
                                 class="border-earthy-brown border-2 rounded-xl py-2 px-4"
                                 aria-label="Decrease mix mode">
@@ -234,7 +234,7 @@
         <div class="xl:hidden mods-container-mobile text-center pt-4 {showModsMobile ? 'show' : ''}">
             <div class="flex items-center justify-center gap-4 w-full">
                 <div class="flex flex-col items-center">
-                    <p class="text-center">Blend Mode</p>
+                    <p class="text-center">Blend Mode ({blendMode})</p>
                     <div class="flex flex-row gap-2">
                         <button on:click={() => backgroundBlendMode(-1)}
                                 class="border-earthy-brown border-2 rounded-xl py-2 w-12 h-12 flex justify-center items-center"

@@ -1,12 +1,29 @@
+<script>
+    const VITE_ADR_1 = import.meta.env.VITE_ADR_1;
+    const VITE_ADR_2 = import.meta.env.VITE_ADR_2;
+    const VITE_ADR_3 = import.meta.env.VITE_ADR_3;
+</script>
+
+<style>
+    img {
+        max-height: 20px;
+    }
+</style>
+
 <div class="dark:bg-darkreader-warm-beige text-color-ctrl">
     <div class="container mx-auto py-8 md:py-16 px-8">
         <h2 class="breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
-            Imprint (English)</h2>
+            Legal Notice (English)</h2>
         <p class="pt-4">
-            Information according to § 5 TMG (Telemedia Act)<br><br>
+            {VITE_ADR_1}<br>
+            {VITE_ADR_2}<br>
+            {VITE_ADR_3}<br>
+            <br>
             Contact:<br>
             E-Mail: <img src="/mail.png" alt="E-Mail" class="inline mb-2"><br>
-            Website: www.lilalunex.dev<br><br>
+            Website: www.lilalunex.dev<br>
+            Phone: <img src="/footer/phone.png" alt="Phone" class="inline mb-2"><br>
+            <br>
 
             Disclaimer:<br><br>
 
@@ -27,11 +44,15 @@
         <h2 class="pt-8 breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
             Impressum (German)</h2>
         <p class="pt-4">
-            Angaben gemäß § 5 TMG (Telemediengesetz)<br><br>
+            {VITE_ADR_1}<br>
+            {VITE_ADR_2}<br>
+            {VITE_ADR_3}<br>
+            <br>
             Kontakt:<br>
             E-Mail: <img src="/mail.png" alt="E-Mail" class="inline mb-2"><br>
-            Website: www.lilalunex.dev<br><br>
-
+            Website: www.lilalunex.dev<br>
+            Telefon: <img src="/footer/phone.png" alt="Telefon" class="inline mb-2"><br>
+            <br>
             Haftungsausschluss:<br><br>
 
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit

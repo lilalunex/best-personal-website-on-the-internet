@@ -26,7 +26,6 @@
 html, .mobile-nav-wrapper {
     background-color: var(--soft-gold);
     background-image: url('/bg-2-tiny-mobile.jpg');
-    /*background-blend-mode: luminosity;*/
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -37,6 +36,90 @@ html, .mobile-nav-wrapper {
         background-image: url('/bg-2-tiny-desktop.jpg');
         background-position: top;
     }
+}
+
+html.blend1 {
+    background-blend-mode: color;
+}
+
+html.blend2 {
+    background-blend-mode: color-burn;
+}
+
+html.blend3 {
+    background-blend-mode: color-dodge;
+}
+
+html.blend4 {
+    background-blend-mode: darken;
+}
+
+html.blend5 {
+    background-blend-mode: difference;
+}
+
+html.blend6 {
+    background-blend-mode: exclusion;
+}
+
+html.blend7 {
+    background-blend-mode: hard-light;
+}
+
+html.blend8 {
+    background-blend-mode: hue;
+}
+
+html.blend9 {
+    background-blend-mode: lighten;
+}
+
+html.blend10 {
+    background-blend-mode: luminosity;
+}
+
+html.blend11 {
+    background-blend-mode: multiply;
+}
+
+html.blend12 {
+    background-blend-mode: overlay;
+}
+
+html.blend13 {
+    background-blend-mode: saturation;
+}
+
+html.blend14 {
+    background-blend-mode: screen;
+}
+
+html.blend15 {
+    background-blend-mode: soft-light;
+}
+
+html.mix1 {
+    mix-blend-mode: darken;
+}
+
+html.mix2 {
+    mix-blend-mode: difference;
+}
+
+html.mix3 {
+    mix-blend-mode: exclusion;
+}
+
+html.mix4 {
+    mix-blend-mode: hard-light;
+}
+
+html.mix5 {
+    mix-blend-mode: luminosity;
+}
+
+html.mix6 {
+    mix-blend-mode: multiply;
 }
 
 main {

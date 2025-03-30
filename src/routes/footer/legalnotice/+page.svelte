@@ -20,7 +20,7 @@
             {VITE_ADR_3}<br>
             <br>
             Contact:<br>
-            E-Mail: <img src="/mail.png" alt="E-Mail" class="inline mb-2"><br>
+            E-Mail: <img src="/footer/mail.png" alt="E-Mail" class="inline mb-2"><br>
             Website: www.lilalunex.dev<br>
             Phone: <img src="/footer/phone.png" alt="Phone" class="inline mb-2"><br>
             <br>
@@ -49,7 +49,7 @@
             {VITE_ADR_3}<br>
             <br>
             Kontakt:<br>
-            E-Mail: <img src="/mail.png" alt="E-Mail" class="inline mb-2"><br>
+            E-Mail: <img src="/footer/mail.png" alt="E-Mail" class="inline mb-2"><br>
             Website: www.lilalunex.dev<br>
             Telefon: <img src="/footer/phone.png" alt="Telefon" class="inline mb-2"><br>
             <br>

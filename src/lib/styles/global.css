@@ -25,7 +25,7 @@
 
 html, .mobile-nav-wrapper {
     background-color: var(--soft-gold);
-    background-image: url('/bg-2-tiny-mobile.jpg');
+    background-image: url('/bg/bg-2-tiny-mobile.jpg');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ html, .mobile-nav-wrapper {
 
 @media (min-width: 1280px) {
     html {
-        background-image: url('/bg-2-tiny-desktop.jpg');
+        background-image: url('/bg/bg-2-tiny-desktop.jpg');
         background-position: top;
     }
 }

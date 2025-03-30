@@ -13,8 +13,8 @@
     let darkMode = false;
     let menuOpen = false;
     let body: DOMTokenList;
-    let showModsDesktop = true;
-    let showModsMobile = true;
+    let showModsDesktop = false;
+    let showModsMobile = false;
     let blendMode = 0;
     let mixMode = 0;
 

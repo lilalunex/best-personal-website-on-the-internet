@@ -149,7 +149,7 @@
         </div>
 
         {#if showModsDesktop}
-            <div class="absolute top-30 right-8" transition:fade>
+            <div class="absolute top-30 right-8 hidden xl:block" transition:fade>
                 <div class="flex gap-4">
                     <div>
                         <p class="text-center">Blend Mode</p>
@@ -231,7 +231,7 @@
             </button>
         </div>
 
-        <div class="mods-container-mobile text-center pt-4 {showModsMobile ? 'show' : ''}">
+        <div class="xl:hidden mods-container-mobile text-center pt-4 {showModsMobile ? 'show' : ''}">
             <div class="flex items-center justify-center gap-4 w-full">
                 <div class="flex flex-col items-center">
                     <p class="text-center">Blend Mode</p>

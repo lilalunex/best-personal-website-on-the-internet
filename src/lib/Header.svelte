@@ -1,6 +1,6 @@
 <script lang="ts">
     import {fade} from "svelte/transition";
-    import {createEventDispatcher, type EventDispatcher} from "svelte";
+    import {createEventDispatcher} from "svelte";
     import Menu from '$lib/Menu.svelte';
     import {onMount} from "svelte";
     // import { removePreloadScreen} from "$lib/js/preload-screen";
@@ -97,6 +97,7 @@
         overflow: hidden;
     }
 
+    /*noinspection CssUnusedSymbol */
     .mods-container-mobile.show {
         height: 160px;
     }

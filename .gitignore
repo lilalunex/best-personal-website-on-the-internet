@@ -5,6 +5,7 @@ src/lib/js/env.ts
 vit-env.d.ts
 *Zone.Identifier
 /static/casino-simulation/
+/static/downloads
 
 node_modules
 

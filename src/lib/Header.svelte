@@ -190,7 +190,7 @@
         </div>
 
         {#if showModsDesktop}
-            <div class="absolute top-30 right-4 hidden xl:block" transition:fade>
+            <div class="absolute top-30 right-4 hidden xl:block z-1" transition:fade>
                 <div class="flex gap-4">
                     <div>
                         <p class="text-center">Blend Mode ({blendMode})</p>

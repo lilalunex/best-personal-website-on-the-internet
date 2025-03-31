@@ -15,6 +15,7 @@
         <h2 class="breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
             Legal Notice (English)</h2>
         <p class="pt-4">
+            Lunex Evolution<br>
             {VITE_ADR_1}<br>
             {VITE_ADR_2}<br>
             {VITE_ADR_3}<br>
@@ -45,6 +46,7 @@
         <h2 class="pt-8 breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
             Impressum (German)</h2>
         <p class="pt-4">
+            Lunex Evolution<br>
             {VITE_ADR_1}<br>
             {VITE_ADR_2}<br>
             {VITE_ADR_3}<br>

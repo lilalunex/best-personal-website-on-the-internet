@@ -11,7 +11,7 @@
 
     let html: HTMLElement;
     let darkMode: boolean = false;
-    let menuOpen: boolean = true;
+    let menuOpen: boolean = false;
     let body: DOMTokenList;
     let showModsDesktop: boolean = false;
     let showModsMobile: boolean = false;
@@ -126,7 +126,7 @@
             <Menu closeMenu={() => {}}/>
         </div>
 
-        <div class="absolute left-36 hidden xl:flex gap-4">
+        <div class="absolute left-24 hidden xl:flex gap-4">
             <div class="flex justify-center items-center">
                 <button on:click={() => (showCV = !showCV)}>
                     <img src="/meta/cv.png" alt="American Language" class="cv">

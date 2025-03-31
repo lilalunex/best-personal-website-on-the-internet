@@ -6,7 +6,7 @@
     // import { removePreloadScreen} from "$lib/js/preload-screen";
     // import '$lib/styles/preload-screen.css';
 
-    const dispatch: EventDispatcher<{ toggleMainClass: void }> = createEventDispatcher();
+    const dispatch = createEventDispatcher();
     const mainBackgroundCookie: string = "mainBackground";
 
     let html: HTMLElement;
@@ -59,7 +59,6 @@
             localStorage.setItem(mainBackgroundCookie, "true");
         }
     }
-
     function toggleModsDesktop() {
         showModsDesktop = !showModsDesktop;
     }

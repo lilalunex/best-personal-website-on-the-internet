@@ -11,7 +11,7 @@
 
     let html: HTMLElement;
     let darkMode: boolean = false;
-    let menuOpen: boolean = false;
+    let menuOpen: boolean = true;
     let body: DOMTokenList;
     let showModsDesktop: boolean = false;
     let showModsMobile: boolean = false;
@@ -360,7 +360,9 @@
                 <!--</svg>`}-->
                 <!--            </button>-->
             </div>
-            <Menu closeMenu={toggleMenu}/>
+            <div class="pt-24">
+                <Menu closeMenu={toggleMenu}/>
+            </div>
         </div>
     {/if}
     <hr>

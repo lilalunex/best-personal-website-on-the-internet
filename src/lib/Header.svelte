@@ -10,7 +10,8 @@
     const mainBackgroundCookie: string = "mainBackground";
 
     let html: HTMLElement;
-    let darkMode: boolean = false;
+    // let darkMode: boolean = false;
+    let biggerTextMode: boolean = false;
     let menuOpen: boolean = false;
     let body: DOMTokenList;
     let showModsDesktop: boolean = false;
@@ -22,9 +23,13 @@
     onMount(() => {
         html = document.documentElement;
         body = document.body.classList;
-        darkMode = localStorage.getItem("darkMode") === "true";
+        // darkMode = localStorage.getItem("darkMode") === "true";
+        biggerTextMode = localStorage.getItem("biggerTextMode") === "true";
+        if (biggerTextMode) {
+            html.classList.add("text-color-ctrl-bigger-text");
+        }
 
-        updateTheme();
+        // updateTheme();
     });
 
     function toggleMenu() {
@@ -43,13 +48,13 @@
     //     updateTheme();
     // }
 
-    function updateTheme() {
-        if (darkMode) {
-            html.classList.add("dark");
-        } else {
-            html.classList.remove("dark");
-        }
-    }
+    // function updateTheme() {
+    //     if (darkMode) {
+    //         html.classList.add("dark");
+    //     } else {
+    //         html.classList.remove("dark");
+    //     }
+    // }
 
     function toggleMainClass() {
         dispatch('toggleMainClass');
@@ -79,6 +84,16 @@
         blendMode = 0;
         mixMode = 0;
     }
+
+    function toggleBiggerText() {
+        if (!biggerTextMode) {
+            html.classList.add("text-color-ctrl-bigger-text");
+        } else {
+            html.classList.remove("text-color-ctrl-bigger-text");
+        }
+        biggerTextMode = !biggerTextMode;
+        localStorage.setItem("biggerTextMode", String(biggerTextMode));
+    }
 </script>
 
 <style>
@@ -99,7 +114,7 @@
 
     /*noinspection CssUnusedSymbol */
     .mods-container-mobile.show {
-        height: 160px;
+        height: 240px;
     }
 
     img.lang {
@@ -126,7 +141,7 @@
             <Menu closeMenu={() => {}}/>
         </div>
 
-        <div class="absolute left-24 hidden xl:flex gap-4">
+        <div class="absolute left-18 hidden xl:flex gap-4">
             <div class="flex justify-center items-center">
                 <button on:click={() => (showCV = !showCV)}>
                     <img src="/meta/cv.png" alt="American Language" class="cv">
@@ -223,7 +238,12 @@
                 <div class="flex justify-center pt-4">
                     <button on:click={resetBackground}
                             class="border-earthy-brown border-2 rounded-xl py-2 px-4">
-                        Reset
+                        Reset Blend & Mix Mode
+                    </button>
+                </div>
+                <div class="flex justify-center pt-4">
+                    <button on:click={toggleBiggerText} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                        <span class="">Toggle Font Weight</span>
                     </button>
                 </div>
             </div>
@@ -313,7 +333,12 @@
             </div>
             <div class="flex justify-center pt-4">
                 <button on:click={resetBackground} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
-                    Reset
+                    Reset Blend & Mix Mode
+                </button>
+            </div>
+            <div class="flex justify-center pt-4">
+                <button on:click={toggleBiggerText} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+                    <span class="">Toggle Font Weight</span>
                 </button>
             </div>
         </div>

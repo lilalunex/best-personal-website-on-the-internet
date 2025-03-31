@@ -31,6 +31,10 @@ html, .mobile-nav-wrapper {
     background-repeat: no-repeat;
 }
 
+html.text-color-ctrl-bigger-text .text-color-ctrl {
+    font-weight: bold;
+}
+
 @media (min-width: 1280px) {
     html {
         background-image: url('/bg/bg-2-tiny-desktop.jpg');
@@ -112,6 +116,11 @@ html.mix3 {
 
 main {
     transition: .6s;
+    animation: ease-in-out;
+}
+
+main, .text-color-ctrl {
+    transition: .1s;
     animation: ease-in-out;
 }
 

@@ -15,6 +15,7 @@
     let body: DOMTokenList;
     let showModsDesktop: boolean = false;
     let showModsMobile: boolean = false;
+    let showCV: boolean = false;
     let blendMode: number = 0;
     let mixMode: number = 0;
 
@@ -36,11 +37,11 @@
         }
     }
 
-    function toggleDarkMode() {
-        darkMode = !darkMode;
-        localStorage.setItem("darkMode", String(darkMode));
-        updateTheme();
-    }
+    // function toggleDarkMode() {
+    //     darkMode = !darkMode;
+    //     localStorage.setItem("darkMode", String(darkMode));
+    //     updateTheme();
+    // }
 
     function updateTheme() {
         if (darkMode) {
@@ -58,13 +59,6 @@
         } else {
             localStorage.setItem(mainBackgroundCookie, "true");
         }
-    }
-    function toggleModsDesktop() {
-        showModsDesktop = !showModsDesktop;
-    }
-
-    function toggleModsMobile() {
-        showModsMobile = !showModsMobile;
     }
 
     function backgroundBlendMode(direction: number) {
@@ -106,6 +100,14 @@
     .mods-container-mobile.show {
         height: 160px;
     }
+
+    img.lang {
+        max-height: 36px;
+    }
+
+    img.cv {
+        max-height: 60px;
+    }
 </style>
 
 <!--<div id="preload-screen"></div>-->
@@ -123,7 +125,28 @@
             <Menu closeMenu={() => {}}/>
         </div>
 
-        <div class="absolute right-8 hidden xl:flex gap-4">
+        <div class="absolute left-36 hidden xl:flex gap-4">
+            <div class="flex justify-center items-center">
+                <button on:click={() => (showCV = !showCV)}>
+                    <img src="/meta/cv.png" alt="American Language" class="cv">
+                    <span class="text-3xl absolute top-7 left-6">CV</span>
+                </button>
+
+                {#if showCV}
+                    <div class="ml-8" transition:fade>
+                        <a href="/downloads/CV.pdf">
+                            <img src="/meta/usa.png" alt="American Language" class="ml-2 lang inline">
+                        </a>
+                        <a href="/downloads/CV_GER.pdf">
+                            <img src="/meta/ger.png" alt="German Language" class="ml-2 lang inline">
+                        </a>
+                    </div>
+                {/if}
+
+            </div>
+        </div>
+
+        <div class="absolute right-4 hidden xl:flex gap-4">
             <!--            <button on:click={toggleDarkMode}>-->
             <!--                {@html darkMode-->
             <!--                    ? `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->
@@ -144,13 +167,13 @@
             <button on:click={toggleMainClass} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
                 Toggle BG
             </button>
-            <button on:click={toggleModsDesktop} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+            <button on:click={() => (showModsDesktop = !showModsDesktop)} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
                 More Mods
             </button>
         </div>
 
         {#if showModsDesktop}
-            <div class="absolute top-30 right-8 hidden xl:block" transition:fade>
+            <div class="absolute top-30 right-4 hidden xl:block" transition:fade>
                 <div class="flex gap-4">
                     <div>
                         <p class="text-center">Blend Mode ({blendMode})</p>
@@ -227,7 +250,7 @@
             <button on:click={toggleMainClass} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
                 Toggle BG
             </button>
-            <button on:click={toggleModsMobile} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
+            <button on:click={() => (showModsMobile = !showModsMobile)} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
                 More Mods
             </button>
         </div>

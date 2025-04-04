@@ -120,7 +120,7 @@ main {
 }
 
 main, .text-color-ctrl {
-    transition: .1s;
+    transition: .6s;
     animation: ease-in-out;
 }
 

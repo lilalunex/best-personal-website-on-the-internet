@@ -13,9 +13,9 @@
 <style>
     @import '$lib/styles/breathing-circle.css';
 
-    .dev-image {
-        max-height: 400px;
-    }
+    /*.dev-image {*/
+    /*    max-height: 400px;*/
+    /*}*/
 </style>
 
 <div class="dark" style="display: none;"></div>
@@ -42,27 +42,27 @@
         </div>
     </div>
 
-    <div class="mx-auto py-8 md:py-16 px-8">
-        <div class="container mx-auto grid grid-cols-1 md-grid-cols-5 md:gap-8">
-            <div class="col-span-3 flex flex-col justify-center ch-65 ml-auto order-2 md:order-1 pb-6 xl:pb-0">
-                <h2 class="h2-color-ctrl text-shadow-[2px_2px_0_black] text-center text-[32px] xl:text-[48px]">Hiiiii~~</h2>
-                <p class="pt-6 text-color-ctrl">
-                    I’m Lunex, a (web) developer based in Germany. Eager to explore new technologies beyond my current
-                    expertise, using platforms like <a href="https://www.boot.dev/" target="_blank" class="underline">boot.dev</a>.
-                    <br><br>
-                    I have experience as a full-stack developer working with WordPress, TYPO3, and Shopware 6. While
-                    I’ve worked across the stack, frontend development has always been my strongest area.
-                </p>
-                <div class="text-center pt-8">
-                    <a href="/dev" aria-label="Dev Page"
-                       class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-6 py-2 text-color-ctrl dark:darkreader-earthy-brown">/dev</a>
-                </div>
-            </div>
-            <div class="col-span-2 pb-6 xl:pb-0 order-1 md:order-2">
-                <img src="/dev/dev4.jpeg" alt="Profile of Lunex in Tokyo"
-                     class="dev-image rounded-xl border-4 border-golden-tan">
-            </div>
-        </div>
-    </div>
+<!--    <div class="mx-auto py-8 md:py-16 px-8">-->
+<!--        <div class="container mx-auto grid grid-cols-1 md-grid-cols-5 md:gap-8">-->
+<!--            <div class="col-span-3 flex flex-col justify-center ch-65 ml-auto order-2 md:order-1 pb-6 xl:pb-0">-->
+<!--                <h2 class="h2-color-ctrl text-shadow-[2px_2px_0_black] text-center text-[32px] xl:text-[48px]">Hiiiii~~</h2>-->
+<!--                <p class="pt-6 text-color-ctrl">-->
+<!--                    I’m Lunex, a (web) developer based in Germany. Eager to explore new technologies beyond my current-->
+<!--                    expertise, using platforms like <a href="https://www.boot.dev/" target="_blank" class="underline">boot.dev</a>.-->
+<!--                    <br><br>-->
+<!--                    I have experience as a full-stack developer working with WordPress, TYPO3, and Shopware 6. While-->
+<!--                    I’ve worked across the stack, frontend development has always been my strongest area.-->
+<!--                </p>-->
+<!--                <div class="text-center pt-8">-->
+<!--                    <a href="/dev" aria-label="Dev Page"-->
+<!--                       class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-6 py-2 text-color-ctrl dark:darkreader-earthy-brown">/dev</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-span-2 pb-6 xl:pb-0 order-1 md:order-2">-->
+<!--                <img src="/dev/dev4.jpeg" alt="Profile of Lunex in Tokyo"-->
+<!--                     class="dev-image rounded-xl border-4 border-golden-tan">-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 
 </div>

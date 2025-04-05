@@ -117,13 +117,13 @@
         height: 240px;
     }
 
-    img.lang {
-        max-height: 36px;
-    }
+    /*img.lang {*/
+    /*    max-height: 36px;*/
+    /*}*/
 
-    img.cv {
-        max-height: 60px;
-    }
+    /*img.cv {*/
+    /*    max-height: 60px;*/
+    /*}*/
 </style>
 
 <!--<div id="preload-screen"></div>-->

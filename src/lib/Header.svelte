@@ -141,26 +141,26 @@
             <Menu closeMenu={() => {}}/>
         </div>
 
-        <div class="absolute left-18 hidden xl:flex gap-4">
-            <div class="flex justify-center items-center">
-                <button on:click={() => (showCV = !showCV)}>
-                    <img src="/meta/cv.png" alt="American Language" class="cv">
-                    <span class="text-3xl absolute top-7 left-6">CV</span>
-                </button>
+<!--        <div class="absolute left-18 hidden xl:flex gap-4">-->
+<!--            <div class="flex justify-center items-center">-->
+<!--                <button on:click={() => (showCV = !showCV)}>-->
+<!--                    <img src="/meta/cv.png" alt="American Language" class="cv">-->
+<!--                    <span class="text-3xl absolute top-7 left-6">CV</span>-->
+<!--                </button>-->
 
-                {#if showCV}
-                    <div class="ml-8" transition:fade>
-                        <a href="/downloads/CV.pdf">
-                            <img src="/meta/usa.png" alt="American Language" class="ml-2 lang inline">
-                        </a>
-                        <a href="/downloads/CV_GER.pdf">
-                            <img src="/meta/ger.png" alt="German Language" class="ml-2 lang inline">
-                        </a>
-                    </div>
-                {/if}
+<!--                {#if showCV}-->
+<!--                    <div class="ml-8" transition:fade>-->
+<!--                        <a href="/downloads/CV.pdf">-->
+<!--                            <img src="/meta/usa.png" alt="American Language" class="ml-2 lang inline">-->
+<!--                        </a>-->
+<!--                        <a href="/downloads/CV_GER.pdf">-->
+<!--                            <img src="/meta/ger.png" alt="German Language" class="ml-2 lang inline">-->
+<!--                        </a>-->
+<!--                    </div>-->
+<!--                {/if}-->
 
-            </div>
-        </div>
+<!--            </div>-->
+<!--        </div>-->
 
         <div class="absolute right-4 hidden xl:flex gap-4">
             <!--            <button on:click={toggleDarkMode}>-->
@@ -350,24 +350,24 @@
                     on:click={toggleMenu}>☰ CLOSE ☰
             </button>
             <div class="absolute top-30">
-                <div class="flex justify-center items-center">
-                    <button on:click={() => (showCV = !showCV)}>
-                        <img src="/meta/cv.png" alt="American Language" class="cv">
-                        <span class="text-3xl absolute top-7 left-6">CV</span>
-                    </button>
+<!--                <div class="flex justify-center items-center">-->
+<!--                    <button on:click={() => (showCV = !showCV)}>-->
+<!--                        <img src="/meta/cv.png" alt="American Language" class="cv">-->
+<!--                        <span class="text-3xl absolute top-7 left-6">CV</span>-->
+<!--                    </button>-->
 
-                    {#if showCV}
-                        <div class="ml-8" transition:fade>
-                            <a href="/downloads/CV.pdf">
-                                <img src="/meta/usa.png" alt="American Language" class="ml-2 lang inline">
-                            </a>
-                            <a href="/downloads/CV_GER.pdf">
-                                <img src="/meta/ger.png" alt="German Language" class="ml-2 lang inline">
-                            </a>
-                        </div>
-                    {/if}
+<!--                    {#if showCV}-->
+<!--                        <div class="ml-8" transition:fade>-->
+<!--                            <a href="/downloads/CV.pdf">-->
+<!--                                <img src="/meta/usa.png" alt="American Language" class="ml-2 lang inline">-->
+<!--                            </a>-->
+<!--                            <a href="/downloads/CV_GER.pdf">-->
+<!--                                <img src="/meta/ger.png" alt="German Language" class="ml-2 lang inline">-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    {/if}-->
 
-                </div>
+<!--                </div>-->
                 <!--            <button on:click={toggleDarkMode}>-->
                 <!--                {@html darkMode-->
                 <!--                    ? `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">-->

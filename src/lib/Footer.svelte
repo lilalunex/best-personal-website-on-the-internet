@@ -32,9 +32,9 @@
     }
 </script>
 
-<style>
-    @import '$lib/styles/cookies-banner.css';
-</style>
+<!--<style>-->
+<!--    @import '$lib/styles/cookies-banner.css';-->
+<!--</style>-->
 
 <footer>
     <hr>
@@ -118,8 +118,8 @@
     <!--    <hr>-->
 </footer>
 
-<aside id="cookies-banner" aria-labelledby="cookie-heading"
-       class="border-3 dark:border-darkreader-golden-tan rounded-2xl show hide border-golden-tan dark:bg-darkreader-soft-cream text-footer-link dark:text-darkreader-earthy-brown">
+<aside id="kekse" aria-labelledby="cookie-heading"
+       class="border-3 dark:border-darkreader-golden-tan rounded-2xl border-golden-tan dark:bg-darkreader-soft-cream text-footer-link dark:text-darkreader-earthy-brown">
     <div class="p-2 md:p-8">
         <h3 id="cookie-heading" class="text-center">Google Analytics</h3>
         <p class="italic text-center pt-4">Give me your juicy Cookies ...</p>

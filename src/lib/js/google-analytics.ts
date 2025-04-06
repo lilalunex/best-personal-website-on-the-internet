@@ -4,7 +4,7 @@ let banner: HTMLElement | null;
 const COOKIE_KEY: string = "cookieGoogleAnalytics";
 
 if (typeof window !== "undefined") {
-    banner = document.getElementById("cookies-banner");
+    banner = document.getElementById("kekse");
     const consent = localStorage.getItem(COOKIE_KEY);
 
     if (consent === "true") {

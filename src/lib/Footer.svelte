@@ -32,12 +32,11 @@
     }
 </script>
 
-<!--<style>-->
-<!--    @import '$lib/styles/cookies-banner.css';-->
-<!--</style>-->
-
 <footer>
     <hr>
+    <div class="pt-8 text-center">
+        I'm a developer, by the way...
+    </div>
     <div class="container mx-auto pt-8 pb-4 md:pb-8 grid grid-cols-1 md-grid-cols-3 xl-grid-cols-3 text-footer-link dark:text-darkreader-earthy-brown">
         <div class="text-center flex flex-col gap-4 pb-4 md:pb-0">
             <div>
@@ -108,7 +107,7 @@
             <div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
         </div>
     </div>
-    <div class="flex justify-center items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">
+    <div class="flex justify-center flex-col items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">
         <button on:click={() => showUnixTimestamp = !showUnixTimestamp}>
             <small>build on:
                 {#if showUnixTimestamp}{buildTimestamp}{:else}{timestampHumanReadable}{/if}

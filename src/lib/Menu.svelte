@@ -3,11 +3,11 @@
 
     const menuItems = [
         {name: "Home", href: "/"},
-        {name: "Dev", href: "/dev"},
+        // {name: "Dev", href: "/dev"},
         {name: "Projects", href: "/projects"},
         {name: "Partners", href: "/partners"},
         {name: "Ad-Space", href: "/ad-space"},
-        {name: "Peace", href: "/peace"}
+        // {name: "Peace", href: "/peace"}
     ];
 </script>
 

@@ -107,11 +107,6 @@
     .btn-ctrl {
         min-width: 200px;
     }
-
-    /*noinspection CssUnusedSymbol */
-    .mods-container-mobile.show {
-        height: 240px;
-    }
 </style>
 
 <!--<div id="preload-screen" class="flex align-items-center justify-content-center">-->

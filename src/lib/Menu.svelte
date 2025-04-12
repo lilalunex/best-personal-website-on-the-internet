@@ -1,31 +1,28 @@
 <script lang="ts">
-    export let closeMenu: () => void = () => {};
+	export let closeMenu: () => void = () => {
+	};
 
-    const menuItems = [
-        {name: "Home", href: "/"},
-        // {name: "Dev", href: "/dev"},
-        {name: "Projects", href: "/projects"},
-        {name: "Partners", href: "/partners"},
-        {name: "Ad-Space", href: "/ad-space"},
-        // {name: "Peace", href: "/peace"}
-    ];
+	const menuItems = [
+		{ img: '/menu/home.png', name: 'Home', href: '/' },
+		{ img: '/menu/projects.png', name: 'Projects', href: '/projects' },
+		{ img: '/menu/partners.png', name: 'Partners', href: '/partners' },
+		{ img: '/menu/adspace.png', name: 'Ad-Space', href: '/ad-space' }
+	];
 </script>
 
-<ul class="text-center flex flex-col xl:flex-row gap-8 text-2xl">
-    {#each menuItems as item}
-        <li>
-            <a href={item.href}
-               class="relative text-3xl xl:text-2xl text-shadow-[1px_1px_0_white]
-        dark:text-white dark:text-shadow-[1px_1px_0_black]
-        transition-all duration-300 ease-in-out
-        before:content-[''] before:absolute before:left-1/2 before:bottom-0
-        before:w-0 before:h-[2px] before:bg-black before:opacity-0
-        before:transition-all before:duration-300 before:origin-bottom
-        hover:before:left-0 hover:before:w-full hover:before:opacity-100
-        dark:before:bg-white dark:hover:before:bg-white"
-               on:click={closeMenu}>
-                {item.name}
-            </a>
-        </li>
-    {/each}
+<style>
+    img {
+        max-height: 78px;
+    }
+</style>
+
+
+<ul class="flex gap-2 md:gap-8 mr-4 md:mr-0">
+	{#each menuItems as item (item.name)}
+		<li>
+			<a href={item.href} on:click={closeMenu}>
+				<img src="{item.img}" alt="Menupoint {item.name}">
+			</a>
+		</li>
+	{/each}
 </ul>

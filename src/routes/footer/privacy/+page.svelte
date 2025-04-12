@@ -10,6 +10,10 @@
             website,
             you agree to the terms outlined in this policy.<br><br>
 
+            The responsible party for data processing is:<br><br>
+            Email: <img src="/footer/mail.png" alt="Email" class="inline mb-2"><br>
+            Website: www.lilalunex.dev<br><br>
+
             Data Collection and Usage:<br>
 
             We collect personal data when you visit our website, such as IP addresses, browser types, and other
@@ -69,9 +73,6 @@
             your
             explicit consent to process your data. If you do not agree, you can opt-out or disable cookies in your
             browser settings.<br><br>
-
-            If you wish to exercise any of these rights, please contact us at <img src="/mail.png" alt="E-Mail"
-                                                                                   class="inline mb-2"><br><br>
         </p>
 
         <h2 class="title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
@@ -85,7 +86,7 @@
             beschriebenen Bedingungen zu.<br><br>
 
             Die verantwortliche Stelle für die Datenverarbeitung ist:<br><br>
-            E-Mail: <img src="/mail.png" alt="E-Mail" class="inline mb-2"><br>
+            E-Mail: <img src="/footer/mail.png" alt="E-Mail" class="inline mb-2"><br>
             Website: www.lilalunex.dev<br><br>
 
             Datenerhebung und Nutzung:<br>
@@ -157,10 +158,6 @@
             um Ihre ausdrückliche Zustimmung zur Verarbeitung Ihrer Daten bitten. Wenn Sie nicht zustimmen, können
             Sie
             die Erfassung ablehnen oder Cookies in den Einstellungen Ihres Browsers deaktivieren.<br><br>
-
-            Wenn Sie eines dieser Rechte ausüben möchten, kontaktieren Sie uns bitte unter <img src="/mail.png"
-                                                                                                alt="E-Mail"
-                                                                                                class="inline mb-2"><br><br>
         </p>
 
     </div>

@@ -3,11 +3,9 @@
 	import { createEventDispatcher } from 'svelte';
 	import Menu from '$lib/Menu.svelte';
 	import { onMount } from 'svelte';
-	// import { removePreloadScreen} from "$lib/js/preload-screen";
 	// import '$lib/styles/preload-screen.css';
 	// import SunIcon from '$lib/icons/SunIcon.svelte';
 	// import MoonIcon from '$lib/icons/MoonIcon.svelte';
-
 	const dispatch = createEventDispatcher();
 	const mainBackgroundCookie: string = 'mainBackground';
 
@@ -30,6 +28,10 @@
 		}
 
 		updateTheme();
+
+		if(screen.width < 1280) {
+			toggleMainClass()
+		}
 	});
 
 	function toggleMenu() {
@@ -112,22 +114,29 @@
     }
 </style>
 
-<!--<div id="preload-screen"></div>-->
+<!--<div id="preload-screen" class="flex align-items-center justify-content-center">-->
+<!--	<p>-->
+<!--		If this loading screen never goes away:<br/>-->
+<!--	</p>-->
+<!--</div>-->
 
 <header>
 	<hr>
-	<nav class="container mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex justify-between items-center xl:px-4 relative">
+	<nav class="container mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex items-center xl:px-4">
+<!--	<nav class="container mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex justify-between items-center xl:px-4 relative">-->
 
 		<!-- mobile -->
-		<div class="xl:hidden mx-auto">
+<!--		<div class="xl:hidden mx-auto">-->
 <!--			<button on:click={toggleMainClass} class="border-deeper-brown border-2 rounded-xl py-2 px-4 top-4 left-2 absolute text-10px xl:text-2xl">-->
 <!--				Toggle<br/>BG-->
 <!--			</button>-->
-			<button
-				class="btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
-				on:click={toggleMenu}>
-				{menuOpen ? '' : 'MENU'}
-			</button>
+
+<!--			<button-->
+<!--				class="btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"-->
+<!--				on:click={toggleMenu}>-->
+<!--				{menuOpen ? '' : 'MENU'}-->
+<!--			</button>-->
+
 <!--			<button on:click={toggleDarkMode} class="border-deeper-brown border-2 rounded-xl py-2 px-4 text-2xl">-->
 <!--				{#if darkMode}-->
 <!--					<SunIcon size={26} />-->
@@ -135,10 +144,10 @@
 <!--					<MoonIcon width={26} height={26} />-->
 <!--				{/if}-->
 <!--			</button>-->
-		</div>
+<!--		</div>-->
 
-		<!-- desktop -->
-		<div class="hidden xl:flex mx-auto">
+<!--		<div class="hidden xl:flex mx-auto">-->
+		<div class="mx-auto">
 			<Menu />
 		</div>
 
@@ -160,7 +169,7 @@
 		</div>
 
 		{#if showModsDesktop}
-			<div class="absolute top-30 right-4 hidden xl:block z-1" transition:fade>
+			<div class="absolute top-42 right-4 hidden xl:block z-1" transition:fade>
 				<div class="flex gap-4">
 					<div>
 						<p class="text-center">Blend Mode ({blendMode})</p>

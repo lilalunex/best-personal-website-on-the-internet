@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let closeMenu: () => void;
+    export let closeMenu: () => void = () => {};
 
     const menuItems = [
         {name: "Home", href: "/"},

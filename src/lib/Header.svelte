@@ -5,9 +5,8 @@
 	import { onMount } from 'svelte';
 	// import { removePreloadScreen} from "$lib/js/preload-screen";
 	// import '$lib/styles/preload-screen.css';
-	import SunIcon from '$lib/icons/SunIcon.svelte';
-	import MoonIcon from '$lib/icons/MoonIcon.svelte';
-	import ToggleBGIcon from '$lib/icons/ToggleBGIcon.svelte';
+	// import SunIcon from '$lib/icons/SunIcon.svelte';
+	// import MoonIcon from '$lib/icons/MoonIcon.svelte';
 
 	const dispatch = createEventDispatcher();
 	const mainBackgroundCookie: string = 'mainBackground';
@@ -18,8 +17,6 @@
 	let menuOpen: boolean = false;
 	let body: DOMTokenList;
 	let showModsDesktop: boolean = false;
-	let showModsMobile: boolean = false;
-	let showCV: boolean = false;
 	let blendMode: number = 0;
 	let mixMode: number = 0;
 
@@ -45,11 +42,11 @@
 		}
 	}
 
-	function toggleDarkMode() {
-		darkMode = !darkMode;
-		localStorage.setItem('darkMode', String(darkMode));
-		updateTheme();
-	}
+	// function toggleDarkMode() {
+	// 	darkMode = !darkMode;
+	// 	localStorage.setItem('darkMode', String(darkMode));
+	// 	updateTheme();
+	// }
 
 	function updateTheme() {
 		if (darkMode) {
@@ -123,21 +120,21 @@
 
 		<!-- mobile -->
 		<div class="xl:hidden mx-auto">
-			<button on:click={toggleMainClass} class="border-deeper-brown border-2 rounded-xl py-2 px-4 text-2xl">
-				BG
-			</button>
+<!--			<button on:click={toggleMainClass} class="border-deeper-brown border-2 rounded-xl py-2 px-4 top-4 left-2 absolute text-10px xl:text-2xl">-->
+<!--				Toggle<br/>BG-->
+<!--			</button>-->
 			<button
 				class="btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
 				on:click={toggleMenu}>
 				{menuOpen ? '' : 'MENU'}
 			</button>
-			<button on:click={toggleDarkMode} class="border-deeper-brown border-2 rounded-xl py-2 px-4 text-2xl">
-				{#if darkMode}
-					<SunIcon size={26} />
-				{:else}
-					<MoonIcon width={26} height={26} />
-				{/if}
-			</button>
+<!--			<button on:click={toggleDarkMode} class="border-deeper-brown border-2 rounded-xl py-2 px-4 text-2xl">-->
+<!--				{#if darkMode}-->
+<!--					<SunIcon size={26} />-->
+<!--				{:else}-->
+<!--					<MoonIcon width={26} height={26} />-->
+<!--				{/if}-->
+<!--			</button>-->
 		</div>
 
 		<!-- desktop -->
@@ -146,13 +143,13 @@
 		</div>
 
 		<div class="absolute right-4 hidden xl:flex gap-4">
-			<button on:click={toggleDarkMode}>
-				{#if darkMode}
-					<SunIcon size={32} />
-				{:else}
-					<MoonIcon size={32} />
-				{/if}
-			</button>
+<!--			<button on:click={toggleDarkMode}>-->
+<!--				{#if darkMode}-->
+<!--					<SunIcon size={32} />-->
+<!--				{:else}-->
+<!--					<MoonIcon size={32} />-->
+<!--				{/if}-->
+<!--			</button>-->
 			<button on:click={toggleMainClass} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
 				Toggle BG
 			</button>
@@ -228,7 +225,7 @@
 		<div
 			class="mobile-nav-wrapper fixed inset-0 flex flex-col justify-center items-center text-2xl gap-6 transition-all duration-300 z-50">
 			<button
-				class="left-1/2 -translate-x-1/2 absolute btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
+				class="top-5 left-1/2 -translate-x-1/2 absolute btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
 				on:click={toggleMenu}>CLOSE
 			</button>
 			<!--			<div class="absolute top-30">-->

@@ -24,7 +24,7 @@
 		<h1 class="title text-center xl:underline breathing-title dark:darkreader-golden-tan text-[28px] xl:text-[64px] text-shadow-[0_0_12px_white] xl:text-shadow-[2px_1px_0_black] fw-bold">
 			{titleText}</h1>
 		<p class="text-center breathing-title text-15px fw-bold xl:text-3xl text-shadow-[0_0_12px_white] xl:text-shadow-[2px_1px_0_black]">
-			The somewhat different personal website.</p>
+			A somewhat different developer website.</p>
 		<div class="breathing-circle-wrapper flex items-center justify-center relative">
 			<div class="inner-breathing-circle absolute"></div>
 			<div class="inner-breathing-circle absolute"></div>

@@ -75,7 +75,7 @@
             browser settings.<br><br>
         </p>
 
-        <h2 class="title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
+        <h2 class="breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
             Datenschutz (Deutsch)</h2>
         <p class="pt-4">
             Einleitung:<br>

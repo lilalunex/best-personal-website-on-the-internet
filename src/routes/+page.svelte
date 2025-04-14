@@ -20,6 +20,7 @@
 
 <div>
 
+	<div class="dark"></div>
 	<div class="container mx-auto pt-8 md:pt-16 px-8">
 		<h1 class="title text-center xl:underline breathing-title dark:darkreader-golden-tan text-[28px] xl:text-[64px] text-shadow-[0_0_12px_white] xl:text-shadow-[1px_1px_0_black] fw-bold">
 			{titleText}</h1>

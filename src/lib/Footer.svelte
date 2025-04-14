@@ -2,7 +2,6 @@
 	import { onMount } from 'svelte';
 	import { setGAConsent, resetGoogleAnalytics } from '$lib/js/google-analytics';
 	import { breathingCircle } from '$lib/js/breathing-circle';
-	// import { removePreloadScreen } from '$lib/js/preload-screen';
 
 	// @ts-ignore
 	const buildTimestamp: number = __BUILD_TIMESTAMP__;
@@ -15,7 +14,6 @@
 		breathingCircle();
 
 		window.addEventListener('scroll', handleScroll);
-		// removePreloadScreen();
 
 		return () => {
 			window.removeEventListener('scroll', handleScroll);

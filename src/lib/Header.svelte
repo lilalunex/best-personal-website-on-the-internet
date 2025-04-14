@@ -3,16 +3,12 @@
 	import { createEventDispatcher } from 'svelte';
 	import Menu from '$lib/Menu.svelte';
 	import { onMount } from 'svelte';
-	// import '$lib/styles/preload-screen.css';
-	// import SunIcon from '$lib/icons/SunIcon.svelte';
-	// import MoonIcon from '$lib/icons/MoonIcon.svelte';
 	const dispatch = createEventDispatcher();
 	const mainBackgroundCookie: string = 'mainBackground';
 
 	let html: HTMLElement;
 	let darkMode: boolean = false;
 	let biggerTextMode: boolean = false;
-	let menuOpen: boolean = false;
 	let body: DOMTokenList;
 	let showModsDesktop: boolean = false;
 	let blendMode: number = 0;
@@ -29,26 +25,10 @@
 
 		updateTheme();
 
-		if(screen.width < 1280) {
-			toggleMainClass()
+		if (screen.width < 1280) {
+			toggleMainClass();
 		}
 	});
-
-	function toggleMenu() {
-		menuOpen = !menuOpen;
-
-		if (menuOpen) {
-			body.add('no-scroll');
-		} else {
-			body.remove('no-scroll');
-		}
-	}
-
-	// function toggleDarkMode() {
-	// 	darkMode = !darkMode;
-	// 	localStorage.setItem('darkMode', String(darkMode));
-	// 	updateTheme();
-	// }
 
 	function updateTheme() {
 		if (darkMode) {
@@ -103,57 +83,16 @@
         border-top: 2px solid var(--golden-tan);
         border-bottom: 2px solid var(--golden-tan);
     }
-
-    .btn-ctrl {
-        min-width: 200px;
-    }
 </style>
-
-<!--<div id="preload-screen" class="flex align-items-center justify-content-center">-->
-<!--	<p>-->
-<!--		If this loading screen never goes away:<br/>-->
-<!--	</p>-->
-<!--</div>-->
 
 <header>
 	<hr>
-	<nav class="container mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex items-center xl:px-4">
-<!--	<nav class="container mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex justify-between items-center xl:px-4 relative">-->
-
-		<!-- mobile -->
-<!--		<div class="xl:hidden mx-auto">-->
-<!--			<button on:click={toggleMainClass} class="border-deeper-brown border-2 rounded-xl py-2 px-4 top-4 left-2 absolute text-10px xl:text-2xl">-->
-<!--				Toggle<br/>BG-->
-<!--			</button>-->
-
-<!--			<button-->
-<!--				class="btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"-->
-<!--				on:click={toggleMenu}>-->
-<!--				{menuOpen ? '' : 'MENU'}-->
-<!--			</button>-->
-
-<!--			<button on:click={toggleDarkMode} class="border-deeper-brown border-2 rounded-xl py-2 px-4 text-2xl">-->
-<!--				{#if darkMode}-->
-<!--					<SunIcon size={26} />-->
-<!--				{:else}-->
-<!--					<MoonIcon width={26} height={26} />-->
-<!--				{/if}-->
-<!--			</button>-->
-<!--		</div>-->
-
-<!--		<div class="hidden xl:flex mx-auto">-->
+	<div class="container relative mx-auto pt-4 pb-4 xl:pt-8 xl:pb-8 flex items-center xl:px-4">
 		<div class="mx-auto">
 			<Menu />
 		</div>
 
 		<div class="absolute right-4 hidden xl:flex gap-4">
-<!--			<button on:click={toggleDarkMode}>-->
-<!--				{#if darkMode}-->
-<!--					<SunIcon size={32} />-->
-<!--				{:else}-->
-<!--					<MoonIcon size={32} />-->
-<!--				{/if}-->
-<!--			</button>-->
 			<button on:click={toggleMainClass} class="border-earthy-brown border-2 rounded-xl py-2 px-4">
 				Toggle BG
 			</button>
@@ -222,32 +161,6 @@
 				</div>
 			</div>
 		{/if}
-
-	</nav>
-
-	{#if menuOpen}
-		<div
-			class="mobile-nav-wrapper fixed inset-0 flex flex-col justify-center items-center text-2xl gap-6 transition-all duration-300 z-50">
-			<button
-				class="top-5 left-1/2 -translate-x-1/2 absolute btn-ctrl xl:hidden py-2 text-2xl mx-auto text-shadow-[1px_1px_0_white] border-2 border-golden-tan bg-warm-beige dark:border-darkreader-golden-tan dark:bg-darkreader-warm-beige rounded-xl text-black dark:text-white dark:text-shadow-[1px_1px_0_black]"
-				on:click={toggleMenu}>CLOSE
-			</button>
-			<!--			<div class="absolute top-30">-->
-			<!--				<button on:click={toggleDarkMode}>-->
-			<!--					{#if darkMode}-->
-			<!--						<SunIcon size={32} />-->
-			<!--					{:else}-->
-			<!--						<MoonIcon size={32} />-->
-			<!--					{/if}-->
-			<!--				</button>-->
-			<!--			</div>-->
-
-			<!--			<div class="pt-24">-->
-
-			<div>
-				<Menu closeMenu={toggleMenu} />
-			</div>
-		</div>
-	{/if}
+	</div>
 	<hr>
 </header>

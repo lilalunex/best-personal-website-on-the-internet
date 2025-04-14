@@ -16,13 +16,14 @@
     }
 </style>
 
-
-<ul class="flex gap-2 md:gap-8 mr-4 md:mr-0">
-	{#each menuItems as item (item.name)}
-		<li>
-			<a href={item.href} on:click={closeMenu}>
-				<img src="{item.img}" alt="Menupoint {item.name}">
-			</a>
-		</li>
-	{/each}
-</ul>
+<nav aria-label="Main menu">
+	<ul class="flex gap-2 md:gap-8 mr-4 md:mr-0">
+		{#each menuItems as item (item.name)}
+			<li>
+				<a href={item.href} on:click={closeMenu}>
+					<img src="{item.img}" alt="Menupoint {item.name}">
+				</a>
+			</li>
+		{/each}
+	</ul>
+</nav>

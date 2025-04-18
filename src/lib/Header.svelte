@@ -24,10 +24,6 @@
 		}
 
 		updateTheme();
-
-		if (screen.width < 1280) {
-			toggleMainClass();
-		}
 	});
 
 	function updateTheme() {

@@ -16,9 +16,10 @@
 			/>
 
 			<Project imgSrc="lotus.png" imgAlt="Casino Simulation" title="Casino Simulation"
-					 desc="Started to deepen PHP knowledge. Had a lod of ideas what to do next with it. Next step would be making this an actual game."
+					 desc="Started to deepen PHP knowledge. Still a lot of ideas open. Next step would be making this an actual (good looking) game."
 					 i1="PHP" i1c="#4F5B93" linkTest="Play here"
 					 linkUrl="https://lilalunex.dev/casino-simulation/index.php"
+					 git="https://github.com/lilalunex/casino-simulation"
 			/>
 
 			<Project imgSrc="one-handed-mobile-menu/three.png" imgAlt="One handed mobile menu"

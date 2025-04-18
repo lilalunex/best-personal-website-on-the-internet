@@ -9,6 +9,7 @@
 	export let i2c: string = '';
 	export let linkTest: string = '';
 	export let linkUrl: string = '';
+	export let git: string = '';
 </script>
 
 <style>
@@ -30,12 +31,15 @@
 	<h3 class="pb-4 pt-8">{title}</h3>
 	<p>{desc}</p>
 	{#if i1 || (linkTest && linkUrl)}
-		<div class="flex items-center pt-6 pb-2 gap-4">
+		<div class="flex flex-col xl:flex-row items-start pt-6 pb-2 gap-2">
 			{#if i1}
 				<span class="py-2 px-4 rounded-xl" style={i1c ? `background-color: ${i1c}` : ''}>{i1}</span>
 			{/if}
+			{#if git}
+				<a href="{git}" class="py-2 pl-2 underline">Git Repo</a>
+			{/if}
 			{#if linkTest && linkUrl}
-				<a href="{linkUrl}" class="py-2 px-4 underline">{linkTest}</a>
+				<a href="{linkUrl}" class="py-2 pl-2 underline">{linkTest}</a>
 			{/if}
 			{#if i2}
 				<span class="py-2 px-4 rounded-xl" style={i2c ? `background-color: ${i2c}` : ''}>{i2}</span>

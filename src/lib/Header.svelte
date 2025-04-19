@@ -3,6 +3,7 @@
 	import { createEventDispatcher } from 'svelte';
 	import Menu from '$lib/Menu.svelte';
 	import { onMount } from 'svelte';
+
 	const dispatch = createEventDispatcher();
 	const mainBackgroundCookie: string = 'mainBackground';
 
@@ -24,6 +25,10 @@
 		}
 
 		updateTheme();
+
+		if (screen.width < 1280) {
+			toggleMainClass();
+		}
 	});
 
 	function updateTheme() {

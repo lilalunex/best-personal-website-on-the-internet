@@ -43,7 +43,7 @@
 
 		<div class="text-center pt-10 pb-18 xl:py-18">
 			<h3 class="text-xl font-semibold">
-				<button on:click="{mailContactMe}"
+				<button onclick="{mailContactMe}"
 						class="bg-warm-beige btn relative overflow-hidden border-2 border-deeper-brown rounded-full px-16 py-8 mb-8 bg-body text-deeper-brown transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)]">
 					<span
 						class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Contact me</span>

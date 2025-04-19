@@ -22,6 +22,12 @@
 					 git="https://github.com/lilalunex/casino-simulation"
 			/>
 
+			<Project imgSrc="projects/website2025.png" imgAlt="2025 Website"
+					 title="2025 Website"
+					 desc="The website you are currently on. Going through a lot of changes and ideas."
+					 i1="Svelte" i1c="#FF3E00" git="https://github.com/lilalunex/best-personal-website-on-the-internet"
+			/>
+
 			<Project imgSrc="one-handed-mobile-menu/three.png" imgAlt="One handed mobile menu"
 					 title="One handed mobile menu"
 					 desc="I am a very aware when I use technology. I disliked a lot the way we navigate through mobile menus. So I came up with this."
@@ -47,13 +53,13 @@
 
 		<div class="pt-8 grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-8">
 
-			<Project imgSrc="lotus.png" imgAlt="Nexx" title="Nexx"
+			<Project imgSrc="lotus.png" imgAlt="Project Placeholder" title="Nexx"
 					 desc="
 					 	Sharing content to all your friends / followers. Mainly as an exercise for me to create a fullstack app. But I do feel like there can something bigger to this.
 					 "
 			/>
 
-			<Project imgSrc="lotus.png" imgAlt="The Coworking Hub" title="The Coworking Hub"
+			<Project imgSrc="lotus.png" imgAlt="Project Placeholder" title="The Coworking Hub"
 					 desc="An idea for an website about coworking. Showing the world about pomodoro timer, coworking twitch streams to find communities / body doubling and provide other similar resources."
 			/>
 

@@ -1,3 +1,29 @@
+<script>
+	function mailAdMe1() {
+		const user = 'lunex';
+		const domain = 'lilalunex.dev';
+		const subject = 'Lilalunex AdSpace1';
+		const email = `${user}@${domain}`;
+		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	}
+
+	function mailAdMe2() {
+		const user = 'lunex';
+		const domain = 'lilalunex.dev';
+		const subject = 'Lilalunex AdSpace2';
+		const email = `${user}@${domain}`;
+		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	}
+
+	function mailAdMe3() {
+		const user = 'lunex';
+		const domain = 'lilalunex.dev';
+		const subject = 'Lilalunex AdSpace3';
+		const email = `${user}@${domain}`;
+		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	}
+</script>
+
 <style>
     .own-adspace {
         border-width: 3px;
@@ -23,10 +49,10 @@
 					Buy this Ad-Space*
 				</p>
 				<div class="pt-16">
-					<a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace1"
+					<button onclick="{mailAdMe1}"
 					   class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl dark:darkreader-earthy-brown">
 						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></a>
+							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></button>
 				</div>
 			</div>
 		</div>
@@ -38,10 +64,10 @@
 					Buy this Ad-Space*
 				</p>
 				<div class="pt-16">
-					<a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace2"
+					<button onclick="{mailAdMe2}"
 					   class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl dark:darkreader-earthy-brown">
 						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></a>
+							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></button>
 				</div>
 			</div>
 		</div>
@@ -53,10 +79,10 @@
 					Buy this Ad-Space*
 				</p>
 				<div class="pt-16">
-					<a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex AdSpace3"
+					<button onclick="{mailAdMe3}"
 					   class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl dark:darkreader-earthy-brown">
 						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></a>
+							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span></button>
 				</div>
 			</div>
 		</div>

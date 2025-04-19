@@ -30,6 +30,22 @@
 			behavior: 'smooth'
 		});
 	};
+
+	function mailContactMe() {
+		const user = 'lunex';
+		const domain = 'lilalunex.dev';
+		const subject = 'Lilalunex Mail Me';
+		const email = `${user}@${domain}`;
+		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	}
+
+	function mailFeedback() {
+		const user = 'lunex';
+		const domain = 'lilalunex.dev';
+		const subject = 'Lilalunex Feedback';
+		const email = `${user}@${domain}`;
+		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	}
 </script>
 
 <footer>
@@ -41,12 +57,10 @@
 		class="container mx-auto pt-8 pb-4 md:pb-8 grid grid-cols-1 md-grid-cols-3 xl-grid-cols-3 text-footer-link dark:text-darkreader-earthy-brown">
 		<div class="text-center flex flex-col gap-4 pb-4 md:pb-0">
 			<div>
-				<a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Mail Me"
-				   class="hover:underline">Contact</a>
+				<button on:click={() => mailContactMe()} class="hover:underline">Contact</button>
 			</div>
 			<div>
-				<a href="mailto:&#108;&#117;&#110;&#101;&#120;&#64;&#108;&#105;&#108;&#97;&#108;&#117;&#110;&#101;&#120;&#46;&#100;&#101;&#118;?subject=Lilalunex Feedback"
-				   class="hover:underline">Feedback</a>
+				<button on:click={() => mailFeedback()} class="hover:underline">Feedback</button>
 			</div>
 			<div>
 				<a href="/footer/credits"

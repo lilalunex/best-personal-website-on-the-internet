@@ -34,6 +34,9 @@
 
 <footer>
 	<hr>
+	<div class="pt-8 text-center">
+		<p>This website is better on a desktop.</p>
+	</div>
 	<div
 		class="container mx-auto pt-8 pb-4 md:pb-8 grid grid-cols-1 md-grid-cols-3 xl-grid-cols-3 text-footer-link dark:text-darkreader-earthy-brown">
 		<div class="text-center flex flex-col gap-4 pb-4 md:pb-0">

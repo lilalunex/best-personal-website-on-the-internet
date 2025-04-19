@@ -24,9 +24,13 @@
     }
 </style>
 
-<div class="rounded-3xl rounded-xl border-4 border-golden-tan p-6">
+<div class="rounded-3xl rounded-xl border-4 border-golden-tan p-6 xl:p-8 bg-warm-beige">
 	<div class="flex justify-center items-center">
-		<img src="{imgSrc}" alt="{imgAlt}" class="">
+		{#if imgSrc === "lotus.png"}
+			<img src="{imgSrc}" alt="{imgAlt}" class="p-6">
+		{:else}
+			<img src="{imgSrc}" alt="{imgAlt}">
+		{/if}
 	</div>
 	<h3 class="pb-4 pt-8">{title}</h3>
 	<p>{desc}</p>

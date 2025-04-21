@@ -17,7 +17,7 @@
 
 			<Project imgSrc="lotus.png" imgAlt="Casino Simulation" title="Casino Simulation"
 					 desc="Started to deepen PHP knowledge. Still a lot of ideas open. Next step would be making this an actual (good looking) game."
-					 i1="PHP" i1c="#4F5B93" linkTest="Play here"
+					 i1="PHP" i1c="#8993BE" linkTest="Play here"
 					 linkUrl="https://lilalunex.dev/casino-simulation/index.php"
 					 git="https://github.com/lilalunex/casino-simulation"
 			/>
@@ -52,6 +52,11 @@
 		</h2>
 
 		<div class="pt-8 grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-8">
+
+			<Project imgSrc="lotus.png" imgAlt="Project Placeholder" title="Lunex Leveling System"
+					 desc="An idea to track your progress what you want to learn or get done. Enjoying to do a Python project after the boot.dev course."
+					 i1="Python" i1c="#306998" git="https://github.com/lilalunex/lunex-leveling-system"
+			/>
 
 			<Project imgSrc="lotus.png" imgAlt="Project Placeholder" title="Nexx"
 					 desc="

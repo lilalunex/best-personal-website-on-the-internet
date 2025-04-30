@@ -13,7 +13,7 @@
 
 <style>
     img {
-        max-height: 78px;
+        max-height: 90px;
     }
 </style>
 

@@ -1,7 +1,9 @@
 <script lang="ts">
+	import FooterLink from '$lib/FooterLink.svelte';
 	import { onMount } from 'svelte';
 	import { setGAConsent, resetGoogleAnalytics } from '$lib/js/google-analytics';
 	import { breathingCircle } from '$lib/js/breathing-circle';
+		import Project from '$lib/Project.svelte';
 
 	// @ts-ignore
 	const buildTimestamp: number = __BUILD_TIMESTAMP__;
@@ -39,13 +41,13 @@
 		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 	}
 
-	function mailFeedback() {
-		const user = 'lunex';
-		const domain = 'lilalunex.dev';
-		const subject = 'Lilalunex Feedback';
-		const email = `${user}@${domain}`;
-		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-	}
+	// function mailFeedback() {
+	// 	const user = 'lunex';
+	// 	const domain = 'lilalunex.dev';
+	// 	const subject = 'Lilalunex Feedback';
+	// 	const email = `${user}@${domain}`;
+	// 	window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+	// }
 </script>
 
 <footer>
@@ -59,67 +61,29 @@
 			<div>
 				<button on:click={() => mailContactMe()} class="hover:underline">Contact</button>
 			</div>
-			<div>
-				<button on:click={() => mailFeedback()} class="hover:underline">Feedback</button>
-			</div>
+<!--			<div>-->
+<!--				<button on:click={() => mailFeedback()} class="hover:underline">Feedback</button>-->
+<!--			</div>-->
 			<div>
 				<a href="/footer/credits"
 				   class="hover:underline">Credits</a>
 			</div>
 		</div>
 		<div class="text-center flex flex-col items-center gap-4 pb-4 md:pb-0">
-			<div class="flex">
-				<a href="https://github.com/lilalunex" aria-label="GitHub Profile" class="hover:underline">GitHub</a>
-				<a href="https://github.com/lilalunex" target="_blank" aria-label="Open GitHub in new tab">
-					<svg class="ml-4 mt-1.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						 viewBox="0 0 24 20"
-						 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						 stroke-linejoin="round">
-						<path d="M15 3h6v6"></path>
-						<path d="M21 3L10 14"></path>
-						<path d="M5 5v14"></path>
-						<path d="M5 19h14"></path>
-					</svg>
-				</a>
-			</div>
-			<div class="flex">
-				<a href="https://www.linkedin.com/in/lilalunex/" aria-label="LinkedIn Profile" class="hover:underline">LinkedIn</a>
-				<a href="https://www.linkedin.com/in/lilalunex/" target="_blank" aria-label="Open LinkedIn in new tab">
-					<svg class="ml-4 mt-1.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						 viewBox="0 0 24 20"
-						 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						 stroke-linejoin="round">
-						<path d="M15 3h6v6"></path>
-						<path d="M21 3L10 14"></path>
-						<path d="M5 5v14"></path>
-						<path d="M5 19h14"></path>
-					</svg>
-				</a>
-			</div>
-			<div class="flex">
-				<a href="https://www.instagram.com/lilalunex" aria-label="Instagram Profile" class="hover:underline">Instagram</a>
-				<a href="https://www.instagram.com/lilalunex" target="_blank" aria-label="Open Instagram in new tab">
-					<svg class="ml-4 mt-1.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-						 viewBox="0 0 24 20"
-						 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-						 stroke-linejoin="round">
-						<path d="M15 3h6v6"></path>
-						<path d="M21 3L10 14"></path>
-						<path d="M5 5v14"></path>
-						<path d="M5 19h14"></path>
-					</svg>
-				</a>
-			</div>
+			<FooterLink name="GitHub" link="https://github.com/lilalunex" />
+			<FooterLink name="LinkedIn" link="https://www.linkedin.com/in/lilalunex/" />
+			<FooterLink name="Instagram" link="https://www.instagram.com/lilalunex" />
+			<FooterLink name="YouTube" link="https://www.youtube.com/@lilalunex" />
 		</div>
 		<div class="text-center flex flex-col justify-end gap-4 pb-4 md:pb-0">
+			<div><a href="/footer/legalnotice" class="hover:underline">Legal Notice</a></div>
+			<div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
 			<div>
 				<button on:click={() => resetGoogleAnalytics()} on:touchstart={() => resetGoogleAnalytics()}
 						class="hover:underline">
 					Reset Google Analytics choice
 				</button>
 			</div>
-			<div><a href="/footer/legalnotice" class="hover:underline">Legal Notice</a></div>
-			<div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
 		</div>
 	</div>
 	<div class="flex justify-center flex-col items-center py-2 text-footer-link dark:text-darkreader-earthy-brown">

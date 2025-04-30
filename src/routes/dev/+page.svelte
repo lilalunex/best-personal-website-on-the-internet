@@ -52,7 +52,7 @@
 		<div class="grid grid-cols-1 xl-grid-cols-2 gap-8 pt-8">
 			<div class="text-center xl:text-right xl:flex flex-col justify-center md:align-items-end">
 				<h1 class="text-3xl">Lunex Edakumi</h1>
-				<p class="text-2xl">Yet another Web Developer</p>
+				<p class="text-xl xl:text-2xl">Yet another Web Developer</p>
 				<div class="flex ml-auto pt-8 gap-8 justify-center text-black dark:text-black">
 					<a href="https://github.com/lilalunex" aria-label="GitHub Profile"
 					   class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] text-color-ctrl dark:darkreader-earthy-brown">

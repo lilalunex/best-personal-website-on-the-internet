@@ -5,6 +5,7 @@
 	const menuItems = [
 		{ img: '/menu/home.png', name: 'Home', href: '/' },
 		{ img: '/menu/projects.png', name: 'Projects', href: '/projects' },
+		{ img: '/menu/dev.png', name: 'Dev', href: '/dev' },
 		{ img: '/menu/partners.png', name: 'Partners', href: '/partners' },
 		{ img: '/menu/adspace.png', name: 'Ad-Space', href: '/ad-space' }
 	];

@@ -27,8 +27,7 @@
             Tax ID.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
             Website: www.lilalunex.dev<br>
             <br>
-            Disclaimer:<br><br>
-
+            Disclaimer:<br>
             The content of our pages has been created with the utmost care. However, we cannot guarantee the
             accuracy, completeness, or timeliness of the content. As a service provider, we are responsible for our
             own content on these pages according to general laws, as per § 7 (1) TMG. According to §§ 8 to 10 TMG,
@@ -58,8 +57,7 @@
             Steuer-Nr.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
             Website: www.lilalunex.dev<br>
             <br>
-            Haftungsausschluss:<br><br>
-
+            Haftungsausschluss:<br>
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
             und
             Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Dienstanbieter sind wir gemäß § 7

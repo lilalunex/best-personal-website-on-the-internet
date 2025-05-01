@@ -15,6 +15,12 @@
 <style>
     @media (min-width: 1280px) {
         img {
+            height: 240px;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        img {
             height: 280px;
         }
     }
@@ -25,7 +31,7 @@
 </style>
 
 <div class="rounded-3xl rounded-xl border-4 border-golden-tan p-6 xl:p-8 bg-warm-beige">
-	<div class="flex justify-center items-center">
+	<div class="flex justify-center items-center img-holder">
 		{#if imgSrc === "lotus.png"}
 			<img src="{imgSrc}" alt="{imgAlt}" class="p-6">
 		{:else}

@@ -11,7 +11,7 @@
 		<div class="pt-8 grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-8">
 
 			<Project imgSrc="projects/lnxevo.png" imgAlt="Lunex Evolution" title="Lunex Evolution"
-					 desc="My WordPress Services. Never went live because I learned again, that I am not a guy for being self employed."
+					 desc="My WordPress Services. Since nobody wants to hire me, I will take manners in my hand. Launches soon."
 					 i1="React" i1c="#57C4DC" i2="IBM Carbon" i2c="#97C1FF"
 			/>
 

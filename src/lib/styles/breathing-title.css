@@ -4,14 +4,6 @@
     --soft-gold: #ffdba0;
 }
 
-.dark {
-    --darkreader-dusky-pink: #781653;
-    --darkreader-soft-gold: #ffd289;
-
-    --dusky-pink: var(--darkreader-dusky-pink);
-    --soft-gold: var(--darkreader-soft-gold);
-}
-
 .breathing-title {
     color: var(--soft-gold);
     animation: breathing-text 8s ease-in-out infinite;

@@ -1,39 +1,27 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import Menu from '$lib/Menu.svelte';
+	import Menu from '$lib/layout/Menu.svelte';
 	import { onMount } from 'svelte';
 
 	const dispatch = createEventDispatcher();
 	const mainBackgroundCookie: string = 'mainBackground';
 
 	let html: HTMLElement;
-	let darkMode: boolean = false;
 	let biggerTextMode: boolean = false;
 	let body: DOMTokenList;
 
 	onMount(() => {
 		html = document.documentElement;
 		body = document.body.classList;
-		darkMode = localStorage.getItem('darkMode') === 'true';
 		biggerTextMode = localStorage.getItem('biggerTextMode') === 'true';
 		if (biggerTextMode) {
 			html.classList.add('text-color-ctrl-bigger-text');
 		}
 
-		updateTheme();
-
 		if (screen.width < 1280) {
 			toggleMainClass();
 		}
 	});
-
-	function updateTheme() {
-		if (darkMode) {
-			html.classList.add('dark');
-		} else {
-			html.classList.remove('dark');
-		}
-	}
 
 	function toggleMainClass() {
 		dispatch('toggleMainClass');

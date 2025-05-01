@@ -1,9 +1,9 @@
 <script lang="ts">
-	import Project from '$lib/Project.svelte';
+	import Project from '$lib/components/Project.svelte';
 </script>
 
 <div>
-	<div class="container mx-auto py-8 xl:py-16 px-8">
+	<div class="container mx-auto  px-8">
 		<h1 class="title text-center underline breathing-title text-[48px] xl:text-[64px] text-shadow-[2px_1px_0_black]">
 			Projects
 		</h1>
@@ -11,7 +11,7 @@
 		<div class="pt-8 grid grid-cols-1 xl:grid-cols-3 gap-4 xl:gap-8">
 
 			<Project imgSrc="projects/lnxevo.png" imgAlt="Lunex Evolution" title="Lunex Evolution"
-					 desc="My WordPress Services. Since nobody wants to hire me, I will take manners in my hand. Launches soon."
+					 desc="My WordPress Services. Instead of the separate website, I rather put the content on this one."
 					 i1="React" i1c="#57C4DC" i2="IBM Carbon" i2c="#97C1FF"
 			/>
 

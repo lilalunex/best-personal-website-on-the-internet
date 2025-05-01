@@ -8,14 +8,6 @@
     --soft-gold: #ffdba0;
 }
 
-.dark {
-    --darkreader-dusky-pink: #781653;
-    --darkreader-soft-gold: #ffd289;
-
-    --dusky-pink: var(--darkreader-dusky-pink);
-    --soft-gold: var(--darkreader-soft-gold);
-}
-
 .breathing-circle-wrapper {
     min-height: 360px;
 }

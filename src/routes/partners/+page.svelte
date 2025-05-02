@@ -7,11 +7,6 @@
     img {
         max-height: 400px;
     }
-
-    a {
-        min-width: 240px;
-        text-align: center;
-    }
 </style>
 
 <div class="container mx-auto px-8 text-center text-color-ctrl">

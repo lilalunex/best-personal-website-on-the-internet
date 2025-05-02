@@ -24,27 +24,29 @@
 		<div class="flex flex-col justify-center items-center">
 			<p class="text-3xl pt-8">DukkArt Digital</p>
 			<p class="text-2xl pt-2 pb-4">Photographer. Media Creator. Rental-studio.</p>
-			<Button
-				link="http://dukkart.de"
-				text="Photograpy-Website"
-				ariaLabel="Dukkart Photograpy-Website"
-				minWidth="240px"
-				target="_blank"
-			/>
-			<Button
-				link="http://dreamstudiobadoeynhausen.de"
-				text="Rental-Studio"
-				ariaLabel="Dreamstudio Bad Oeynhausen Rental-Studio"
-				minWidth="240px"
-				target="_blank"
-			/>
-			<Button
-				link="https://www.instagram.com/dukkart/"
-				text="Instagram"
-				ariaLabel="Dukkart Instagram"
-				minWidth="240px"
-				target="_blank"
-			/>
+			<div class="flex flex-col gap-6 pt-4">
+				<Button
+					link="http://dukkart.de"
+					text="Photograpy-Website"
+					ariaLabel="Dukkart Photograpy-Website"
+					minWidth="240px"
+					target="_blank"
+				/>
+				<Button
+					link="http://dreamstudiobadoeynhausen.de"
+					text="Rental-Studio"
+					ariaLabel="Dreamstudio Bad Oeynhausen Rental-Studio"
+					minWidth="240px"
+					target="_blank"
+				/>
+				<Button
+					link="https://www.instagram.com/dukkart/"
+					text="Instagram"
+					ariaLabel="Dukkart Instagram"
+					minWidth="240px"
+					target="_blank"
+				/>
+			</div>
 		</div>
 	</div>
 
@@ -52,20 +54,22 @@
 		<div class="flex flex-col justify-center items-center order-2 xl:order-1">
 			<p class="text-3xl pt-8">Reza Jaxon</p>
 			<p class="text-2xl pt-2 pb-4">Dancer. Graffiti Artist. Designer.</p>
-			<Button
-				link="https://shibuy.art/"
-				text="Art-Website"
-				ariaLabel="Shiburt Art Website"
-				minWidth="240px"
-				target="_blank"
-			/>
-			<Button
-				link="https://www.instagram.com/salvador_jaxon/"
-				text="Instagram"
-				ariaLabel="Reza Jaxon Instagram"
-				minWidth="240px"
-				target="_blank"
-			/>
+			<div class="flex flex-col gap-6 pt-4">
+				<Button
+					link="https://shibuy.art/"
+					text="Art-Website"
+					ariaLabel="Shiburt Art Website"
+					minWidth="240px"
+					target="_blank"
+				/>
+				<Button
+					link="https://www.instagram.com/salvador_jaxon/"
+					text="Instagram"
+					ariaLabel="Reza Jaxon Instagram"
+					minWidth="240px"
+					target="_blank"
+				/>
+			</div>
 		</div>
 		<div class="order-1 xl:order-2">
 			<img src="/partners/jaxon.png" alt="Reza Jaxon"

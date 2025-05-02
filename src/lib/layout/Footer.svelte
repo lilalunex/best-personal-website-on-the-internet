@@ -60,18 +60,19 @@
 		<div class="text-center flex flex-col items-center gap-4 pb-4 md:pb-0">
 			<FooterLink name="GitHub" link="https://github.com/lilalunex" />
 			<FooterLink name="LinkedIn" link="https://www.linkedin.com/in/lilalunex/" />
+			<FooterLink name="Boot.dev" link="https://www.boot.dev/u/lilalunex" />
 			<FooterLink name="Instagram" link="https://www.instagram.com/lilalunex" />
 			<FooterLink name="YouTube" link="https://www.youtube.com/@lilalunex" />
 		</div>
-		<div class="text-center flex flex-col justify-end gap-4 pb-4 md:pb-0">
-			<div><a href="/footer/legalnotice" class="hover:underline">Legal Notice</a></div>
-			<div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
+		<div class="text-center flex flex-col gap-4 pb-4 md:pb-0">
 			<div>
 				<button on:click={() => resetGoogleAnalytics()} on:touchstart={() => resetGoogleAnalytics()}
 						class="hover:underline">
 					Reset Google Analytics choice
 				</button>
 			</div>
+			<div><a href="/footer/legalnotice" class="hover:underline">Legal Notice</a></div>
+			<div><a href="/footer/privacy" class="hover:underline">Privacy Policy</a></div>
 		</div>
 	</div>
 	<div class="flex justify-center flex-col items-center py-2 text-footer-link">

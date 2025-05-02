@@ -1,29 +1,6 @@
 <script>
 	import SubPageTitle from '$lib/components/SubPageTitle.svelte';
-
-	function mailAdMe1() {
-		const user = 'lunex';
-		const domain = 'lilalunex.dev';
-		const subject = 'Lilalunex AdSpace1';
-		const email = `${user}@${domain}`;
-		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-	}
-
-	function mailAdMe2() {
-		const user = 'lunex';
-		const domain = 'lilalunex.dev';
-		const subject = 'Lilalunex AdSpace2';
-		const email = `${user}@${domain}`;
-		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-	}
-
-	function mailAdMe3() {
-		const user = 'lunex';
-		const domain = 'lilalunex.dev';
-		const subject = 'Lilalunex AdSpace3';
-		const email = `${user}@${domain}`;
-		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
-	}
+	import MailButton from '$lib/components/MailButton.svelte';
 </script>
 
 <style>
@@ -48,11 +25,11 @@
 				Buy this Ad-Space*
 			</p>
 			<div class="pt-16">
-				<button onclick="{mailAdMe1}"
-						class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl">
-						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span>
-				</button>
+				<MailButton
+					subject="AdSpace1"
+					text="Mail me about it"
+					ariaLabel="Lilalunex AdSpace1"
+				/>
 			</div>
 		</div>
 	</div>
@@ -64,11 +41,11 @@
 				Buy this Ad-Space*
 			</p>
 			<div class="pt-16">
-				<button onclick="{mailAdMe2}"
-						class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl">
-						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span>
-				</button>
+				<MailButton
+					subject="AdSpace2"
+					text="Mail me about it"
+					ariaLabel="Lilalunex AdSpace2"
+				/>
 			</div>
 		</div>
 	</div>
@@ -80,11 +57,11 @@
 				Buy this Ad-Space*
 			</p>
 			<div class="pt-16">
-				<button onclick="{mailAdMe3}"
-						class="bg-button-ctrl border-deeper-brown border-2 rounded-xl px-8 py-4 relative overflow-hidden transition-all duration-300 ease-in-out shadow-md group hover:shadow-[0px_10px_20px_rgba(0,0,0,0.3)] bg-button-ctrl">
-						<span
-							class="relative inline-block before:content-[''] before:absolute before:left-1/2 before:bottom-0 before:w-0 before:h-[2px] before:bg-deeper-brown before:opacity-100 before:transition-all before:duration-300 before:origin-center group-hover:before:left-0 group-hover:before:w-full">Mail me about it</span>
-				</button>
+				<MailButton
+					subject="AdSpace3"
+					text="Mail me about it"
+					ariaLabel="Lilalunex AdSpace3"
+				/>
 			</div>
 		</div>
 	</div>

@@ -3,7 +3,7 @@
 	import { fade } from 'svelte/transition';
 	import SubPageTitle from '$lib/components/SubPageTitle.svelte';
 	import Button from '$lib/components/Button.svelte';
-	import ContactMeButton from '$lib/components/ContactMeButton.svelte';
+	import MailButton from '$lib/components/MailButton.svelte';
 
 	let images = [
 		'/dev/dev1.jpg',
@@ -46,7 +46,7 @@
 		<div class="text-center xl:text-right xl:flex flex-col justify-center md:align-items-end">
 			<h1 class="text-3xl">Lunex Edakumi</h1>
 			<p class="text-xl xl:text-2xl">Yet another Web Developer</p>
-			<div class="flex ml-auto pt-8 gap-8 justify-center text-black">
+			<div class="flex flex-col md:flex-row ml-auto pt-8 gap-8 justify-center text-black items-center">
 				<Button
 					link="https://github.com/lilalunex"
 					text="GitHub"
@@ -56,6 +56,11 @@
 					link="https://www.linkedin.com/in/lilalunex/"
 					text="LinkedIn"
 					ariaLabel="LinkedIn Profile"
+				/>
+				<Button
+					link="https://www.boot.dev/u/lilalunex"
+					text="Boot.dev"
+					ariaLabel="Boot.dev Profile"
 				/>
 			</div>
 		</div>
@@ -81,6 +86,7 @@
 				<p>JavaScript</p>
 				<p>PHP</p>
 				<p>MySQL</p>
+				<p>Python</p>
 			</div>
 			<div class="text-xl text-left">
 				<p class="fw-bold">Experience</p>
@@ -89,6 +95,9 @@
 				<p>4+ years</p>
 				<p>3+ years</p>
 				<p>4+ years</p>
+				<p>
+					<a href="https://www.boot.dev/u/lilalunex" class="underline">Boot.dev certificate</a>
+				</p>
 			</div>
 		</div>
 		<div class="grid grid-cols-2 gap-4">
@@ -131,14 +140,12 @@
 				<p>This Website</p>
 			</div>
 		</div>
-		<div class="text-xl text-center">
-			<p class="fw-bold">Strenghts</p>
-			<p>Frontend</p>
-			<p>Evaluating Website Useability</p>
-			<p>Organization</p>
-		</div>
+	</div>
+	<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 pt-16">
 		<div>
-			<div><p class="fw-bold text-center">My Choices</p></div>
+			<div>
+				<p class="fw-bold text-center">My Choices</p>
+			</div>
 			<div class="grid grid-cols-2 gap-4">
 				<div class="text-xl text-right">
 					<p>OS</p>
@@ -147,16 +154,15 @@
 					<p>Learning</p>
 				</div>
 				<div class="text-xl text-left">
-					<p>macOS, Linux</p>
+					<p>macOS</p>
 					<p>intelliJ, Neovim</p>
 					<p>Alfred</p>
-					<p><a href="boot.dev" target="_blank" class="underline">boot.dev</a><br><a
-						href="https://frontendmasters.com/" target="_blank"
-						class="underline">frontendmasters</a>
+					<p><a href="boot.dev" target="_blank" class="underline">boot.dev</a>
 					</p>
 				</div>
 			</div>
 		</div>
+
 		<div class="grid grid-cols-2 gap-4">
 			<div class="text-xl text-right">
 				<p class="fw-bold">Language</p>
@@ -177,7 +183,11 @@
 
 	<div>
 		<div class="text-center pb-8 pt-16 text-black">
-			<ContactMeButton />
+			<MailButton
+				subject="Contact Me"
+				text="Contact me"
+				ariaLabel="Contact me"
+			/>
 		</div>
 	</div>
 	<div class="text-center">

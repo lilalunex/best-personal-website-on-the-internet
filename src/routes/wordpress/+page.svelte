@@ -65,7 +65,8 @@
 			69,- € / hr
 		</p>
 		<p class="pt-4">
-			No VAT due to small business regulation<br>
+			No VAT due to small business regulation</p>
+		<p class="mx--4">
 			Transparent pricing with no hidden costs.
 		</p>
 		<div class="pt-12">

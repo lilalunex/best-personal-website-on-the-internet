@@ -19,7 +19,8 @@
 </style>
 
 <nav aria-label="Main menu">
-	<ul class="flex gap-2 md:gap-8 mr-4 md:mr-0">
+	<ul class="grid grid-cols-3 gap-4 px-4 xl:flex">
+<!--	<ul class="flex gap-2 md:gap-8 mr-4 md:mr-0">-->
 		{#each menuItems as item}
 			<li>
 				<a href={item.href} on:click={closeMenu}>

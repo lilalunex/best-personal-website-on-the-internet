@@ -23,8 +23,9 @@
 		E-Mail: <img src="/footer/mail.png" alt="E-Mail address" class="inline mb-1"><br>
 		Phone: <img src="/footer/phone.png" alt="Phone number" class="inline mb-2"><br>
 		<br>
-		Tax ID.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
 		Website: www.lilalunex.dev<br>
+		Tax ID.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
+		Pursuant to § 19 of the German VAT Act, no VAT is charged (small business regulation).<br>
 		<br>
 		Disclaimer:<br>
 		The content of our pages has been created with the utmost care. However, we cannot guarantee the
@@ -38,7 +39,10 @@
 		Our offering contains links to external websites of third parties, over whose content we have no
 		control. Therefore, we cannot accept any liability for the content of these external websites. The
 		respective provider or operator of the linked pages is always responsible for the content of the linked
-		pages.
+		pages.<br><br>
+
+		WordPress and the WordPress logo are trademarks of the WordPress Foundation.<br>
+		WooCommerce is a registered trademark of Automattic Inc. This website is not affiliated with or endorsed by the WordPress Foundation or Automattic Inc.
 	</p>
 
 	<h2 class="pt-8 breathing-title underline color-golden-tan text-[32px] xl:text-[48px] text-shadow-[2px_1px_0_black]">
@@ -53,8 +57,9 @@
 		E-Mail: <img src="/footer/mail.png" alt="E-Mail Adresse" class="inline mb-1"><br>
 		Telefon: <img src="/footer/phone.png" alt="Telefon Nummer" class="inline mb-2"><br>
 		<br>
-		Steuer-Nr.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
 		Website: www.lilalunex.dev<br>
+		Steuer-Nr.: <img src="/footer/tax.png" alt="Tax number" class="inline mb-1"><br>
+		Gemäß § 19 UStG wird keine Umsatzsteuer berechnet (Kleinunternehmerregelung).<br>
 		<br>
 		Haftungsausschluss:<br>
 		Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit
@@ -72,7 +77,10 @@
 		Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
 		Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der
 		verlinkten
-		Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+		Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.<br><br>
+
+		WordPress und das WordPress-Logo sind eingetragene Marken der WordPress Foundation.<br>
+		WooCommerce ist eine eingetragene Marke von Automattic Inc. Diese Website steht in keiner Verbindung zur WordPress Foundation oder Automattic Inc. und wird nicht von ihnen unterstützt.
 	</p>
 
 </div>

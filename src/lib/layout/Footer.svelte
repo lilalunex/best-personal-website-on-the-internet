@@ -39,6 +39,17 @@
 		const email = `${user}@${domain}`;
 		window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
 	}
+
+	const footerLinks = [];
+
+	for (let i = 1; i <= 10; i++) {
+		const name = import.meta.env[`VITE_FOOTER_${i}_TEXT`];
+		const link = import.meta.env[`VITE_FOOTER_${i}_LINK`];
+
+		if (name && link) {
+			footerLinks.push({ name, link });
+		}
+	}
 </script>
 
 <footer>
@@ -58,11 +69,9 @@
 			</div>
 		</div>
 		<div class="text-center flex flex-col items-center gap-4 pb-4 md:pb-0">
-			<FooterLink name="GitHub" link="https://github.com/lilalunex" />
-			<FooterLink name="LinkedIn" link="https://www.linkedin.com/in/lilalunex/" />
-			<FooterLink name="Boot.dev" link="https://www.boot.dev/u/lilalunex" />
-			<FooterLink name="Instagram" link="https://www.instagram.com/lilalunex" />
-			<FooterLink name="YouTube" link="https://www.youtube.com/@lilalunex" />
+			{#each footerLinks as { name, link }}
+				<FooterLink {name} {link} />
+			{/each}
 		</div>
 		<div class="text-center flex flex-col gap-4 pb-4 md:pb-0">
 			<div>

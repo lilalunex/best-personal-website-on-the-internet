@@ -29,9 +29,9 @@
 <div>
 
 	<div class="container mx-auto px-8">
-		<h1 class="title text-center xl:underline breathing-title text-[28px] xl:text-[64px] text-shadow-[0_0_12px_white] xl:text-shadow-[2px_2px_0_black]">
+		<h1 class="title text-center xl:underline breathing-title text-[28px] xl:text-[64px] text-shadow-[1px_1px_0_black] xl:text-shadow-[2px_2px_0_black]">
 			{titleText}</h1>
-		<p class="text-center breathing-title text-15px xl:text-3xl text-shadow-[0_0_12px_white] xl:text-shadow-[1px_1px_0_black]">
+		<p class="text-center breathing-title text-15px xl:text-3xl text-shadow-[1px_1px_0_black] xl:text-shadow-[1px_1px_0_black]">
 			A somewhat different developer website.</p>
 		<div class="breathing-circle-wrapper flex items-center justify-center relative">
 			<div class="inner-breathing-circle absolute"></div>

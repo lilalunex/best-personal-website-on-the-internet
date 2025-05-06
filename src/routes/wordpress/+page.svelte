@@ -57,7 +57,7 @@
 	<!--	</div>-->
 	<!--{/if}-->
 
-	<div class="pt-18 flex flex-col justify-center items-center text-color-ctrl text-center">
+	<div class="pt-12 flex flex-col text-color-ctrl text-center">
 		<h2 class="underline text-4xl pt-8">
 			Pricing
 		</h2>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 
-	<div class="pt-18 flex flex-col justify-center items-center text-color-ctrl text-center">
+	<div class="pt-18 flex flex-col text-color-ctrl text-center">
 		<h2 class="underline text-4xl pt-8">
 			What's WordPress
 		</h2>
@@ -81,13 +81,14 @@
 			The World's Most Popular Content Management System
 		</h3>
 		<p class="pt-6 text-center">
-			WordPress is a user-friendly Content Management System (CMS) that allows you to manage your website without
+			WordPress is a user-friendly Content Management System (CMS) that allows you to manage your website
+			without
 			technical knowledge. With over 40% of all websites worldwide, WordPress is the preferred choice for
 			businesses, blogs, and online shops.
 		</p>
 	</div>
 
-	<div class="pt-18 flex flex-col justify-center items-center text-color-ctrl text-center">
+	<div class="pt-18 flex flex-col text-color-ctrl text-center">
 		<h2 class="underline text-4xl pt-8">
 			My Services
 		</h2>
@@ -117,10 +118,16 @@
 			Why me
 		</h2>
 		<p class="pt-6 ch-65">
-			Many agencies charge high monthly fees for services you often don't need. In reality, the costs for a domain and web hosting are quite modest. Typically just a third per year of what other agencies charge per month.
+			Many agencies charge high monthly fees for services you often don't need. In reality, the costs for a domain
+			and web hosting are quite modest. Typically just a third per year of what other agencies charge per month.
 		</p>
 		<p class="pt-6 ch-65">
-			I have the experience of working at agencies. So I don't lack of knowledge in that regard. But since you hire me as a self agent now, I can deliver you the same quality for a cheaper price.
+			I have the experience of working at agencies. So I don't lack of knowledge in that regard. But since you
+			hire me as a self agent now, I can deliver you the same quality for a cheaper price.
+		</p>
+		<p class="pt-6 ch-65">
+			Support the little, free thinking spirit.<br><br>
+			I first created an entire new website for this. Looking more professional than this one. But I decided to rather keep things in my own ... charme.
 		</p>
 	</div>
 
